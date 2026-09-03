@@ -12,7 +12,7 @@ import { site } from '@/lib/site';
 export const metadata: Metadata = buildMetadata({
   title: 'Kundeanmeldelser – Tømrer i Vejle',
   description:
-    'Læs anmeldelser fra kunder i Vejle, Bredsten og omegn. Brdr. Larsen har en gennemsnitlig bedømmelse på 4,9 stjerner. Se hvorfor kunderne anbefaler os.',
+    'Læs anmeldelser fra kunder i Vejle, Bredsten og omegn. Se hvorfor kunderne anbefaler Brdr. Larsen.',
   path: '/kundeanmeldelser',
   keywords: ['anmeldelser tømrer Vejle', 'Brdr. Larsen anmeldelser'],
 });
@@ -22,12 +22,6 @@ function reviewSchema() {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: site.legalName,
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: site.rating.value,
-      reviewCount: site.rating.count,
-      bestRating: 5,
-    },
     review: testimonials.map((t) => ({
       '@type': 'Review',
       author: { '@type': 'Person', name: t.name },
@@ -41,7 +35,7 @@ export default function ReviewsPage() {
   return (
     <>
       <SetHeaderTheme theme="dark" />
-      <JsonLd data={reviewSchema()} />
+      {testimonials.length > 0 && <JsonLd data={reviewSchema()} />}
       <section className="bg-cream-100 pt-[110px]">
         <div className="container-max py-14">
           <Breadcrumbs items={[{ name: 'Forside', path: '/' }, { name: 'Kundeanmeldelser', path: '/kundeanmeldelser' }]} />

@@ -38,16 +38,11 @@ export function localBusinessSchema() {
       {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        opens: '07:00',
+        opens: '08:00',
         closes: '16:00',
       },
     ],
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: site.rating.value,
-      reviewCount: site.rating.count,
-      bestRating: 5,
-    },
+    // Tilføj aggregateRating igen, når der er rigtige anmeldelser at basere den på.
     sameAs: [site.social.facebook],
   };
 }

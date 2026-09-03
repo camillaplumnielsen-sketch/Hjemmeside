@@ -14,28 +14,25 @@ export const site = {
   employees: '10-11',
   // Skift til det endelige domæne inden lancering
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.brdrlarsen.dk',
+  // TODO: bekræft den rigtige kontakt-email – ikke verificeret i CVR-registret
   email: 'kontakt@brdrlarsen.dk',
-  phone: '+45 40 00 00 00',
-  phoneDisplay: '40 00 00 00',
+  phone: '+45 22 44 08 46',
+  phoneDisplay: '22 44 08 46',
   address: {
-    street: 'Industrivej 1',
+    street: 'Kærbøllinghusevej 44',
     postalCode: '7182',
     city: 'Bredsten',
     region: 'Region Syddanmark',
     country: 'DK',
-    // Bredsten, Danmark – opdatér med de præcise koordinater for adressen
-    lat: 55.7086,
-    lng: 9.4297,
+    // Bredsten bymidte – opdatér med de præcise koordinater for den konkrete adresse via Google Maps
+    lat: 55.7025,
+    lng: 9.3819,
   },
   areaServed: ['Bredsten', 'Vejle', 'Jelling', 'Give', 'Børkop', 'Fredericia', 'Egtved'],
-  openingHours: 'Man–fre 07.00–16.00',
-  cvr: '00000000',
+  openingHours: 'Man–fre 08.00–16.00',
+  cvr: '30546350',
   social: {
     facebook: 'https://www.facebook.com/larsenbrdr/?locale=da_DK',
-  },
-  rating: {
-    value: 4.9,
-    count: 87,
   },
 } as const;
 
