@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" width="320" height="64">
+  <rect x="0" y="12" width="40" height="40" rx="9" fill="#1f4331"/>
+  <path d="M9 33 20 22l11 11" fill="none" stroke="#f4eee1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M13 31v12h14V31" fill="none" stroke="#f4eee1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="52" y="34" font-family="Georgia, serif" font-size="22" font-weight="600" fill="#0f261c">Brdr. Larsen</text>
+  <text x="52" y="50" font-family="Arial, sans-serif" font-size="9" letter-spacing="3" fill="#a15f31">TØMRER · SIDEN 2007</text>
+</svg>
