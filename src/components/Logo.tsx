@@ -3,15 +3,10 @@ import Link from 'next/link';
 export function Logo({ light = false }: { light?: boolean }) {
   return (
     <Link href="/" className="group flex items-center gap-2.5" aria-label="Brdr. Larsen – forside">
-      <span
-        className={`flex h-9 w-9 items-center justify-center rounded-lg transition-colors ${
-          light ? 'bg-cream-50/10 text-cream-50' : 'bg-forest-700 text-cream-50'
-        }`}
-      >
-        <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5" aria-hidden="true">
-          <path d="M3 12 12 4l9 8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M6 11v8h12v-8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
+      {/* Hvid baggrundschip, så logoets sorte streger altid har kontrast – både over mørk hero og lys header */}
+      <span className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-cream-50 p-1 shadow-soft">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/logo.svg" alt="Brdr. Larsen logo" className="h-full w-full object-contain" />
       </span>
       <span className="flex flex-col leading-none">
         <span
