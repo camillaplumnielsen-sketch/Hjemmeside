@@ -3,7 +3,6 @@ import { Hero } from '@/components/Hero';
 import { USPSection } from '@/components/USPSection';
 import { ServicesGrid } from '@/components/ServicesGrid';
 import { SectionHeading } from '@/components/SectionHeading';
-import { QuoteCalculator } from '@/components/QuoteCalculator';
 import { CaseGrid } from '@/components/CaseGrid';
 import { BeforeAfterSlider } from '@/components/BeforeAfterSlider';
 import { Testimonials } from '@/components/Testimonials';
@@ -33,38 +32,6 @@ export default function HomePage() {
         />
         <div className="mt-12">
           <ServicesGrid />
-        </div>
-      </section>
-
-      {/* Tilbudsberegner */}
-      <section className="surface-wood py-section">
-        <div className="container-max grid items-center gap-12 lg:grid-cols-2">
-          <div>
-            <SectionHeading
-              eyebrow="Prisoverslag på sekunder"
-              title="Hvad koster dit projekt?"
-              description="Prøv vores tilbudsberegner og få et indikativt prisinterval med det samme. Vil du have en fast pris, kommer vi gerne forbi til en gratis besigtigelse."
-            />
-            <ul className="mt-8 space-y-4">
-              {[
-                'Uforpligtende og gratis',
-                'Svar med det samme',
-                'Efterfulgt af et fast, skriftligt tilbud',
-              ].map((li) => (
-                <li key={li} className="flex items-center gap-3 text-forest-700">
-                  <span className="flex h-6 w-6 flex-none items-center justify-center rounded-full bg-forest-700 text-cream-50">
-                    <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="m5 13 4 4L19 7" />
-                    </svg>
-                  </span>
-                  {li}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <Reveal delay={0.1}>
-            <QuoteCalculator />
-          </Reveal>
         </div>
       </section>
 

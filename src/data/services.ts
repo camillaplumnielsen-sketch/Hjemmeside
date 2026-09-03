@@ -65,7 +65,7 @@ export const services: Service[] = [
       {
         question: 'Hvad koster et nyt tag i Vejle?',
         answer:
-          'Prisen afhænger af tagets størrelse, hældning og valg af materiale. De fleste tagprojekter på et parcelhus ligger mellem 180.000 og 450.000 kr. Brug vores tilbudsberegner eller kontakt os for et præcist tilbud.',
+          'Prisen afhænger af tagets størrelse, hældning og valg af materiale. De fleste tagprojekter på et parcelhus ligger mellem 180.000 og 450.000 kr. Kontakt os for et præcist tilbud.',
       },
       {
         question: 'Hvor lang tid tager en tagudskiftning?',

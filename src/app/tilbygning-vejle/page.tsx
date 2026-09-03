@@ -34,7 +34,7 @@ export default function TilbygningVejlePage() {
         { question: 'Skal jeg have byggetilladelse til en tilbygning?', answer: 'De fleste tilbygninger kræver byggetilladelse. Vi hjælper med tegninger og hele ansøgningen.' },
         { question: 'Hvor lang tid tager en tilbygning?', answer: 'Typisk 6-14 uger afhængigt af størrelse og kompleksitet. Du får en fast tidsplan fra start.' },
         { question: 'Kan I bygge i samme stil som mit hus?', answer: 'Ja. Vi matcher materialer, tag og facade, så tilbygningen ser ud, som om den altid har været der.' },
-        { question: 'Hvad koster en tilbygning i Vejle?', answer: 'Det afhænger af størrelse og udførelse. Brug vores tilbudsberegner for et overslag, eller kontakt os for en fast pris.' },
+        { question: 'Hvad koster en tilbygning i Vejle?', answer: 'Det afhænger af størrelse og udførelse. Kontakt os for et overslag eller en fast pris.' },
       ]}
       ctaLabel="Få tilbud på tilbygning"
     />

@@ -31,7 +31,7 @@ export default function NytTagVejlePage() {
         'Fast pris efter gratis besigtigelse',
       ]}
       faq={[
-        { question: 'Hvad koster et nyt tag i Vejle?', answer: 'De fleste tagprojekter på et parcelhus ligger mellem 180.000 og 450.000 kr. afhængigt af størrelse og materiale. Brug vores tilbudsberegner for et hurtigt overslag.' },
+        { question: 'Hvad koster et nyt tag i Vejle?', answer: 'De fleste tagprojekter på et parcelhus ligger mellem 180.000 og 450.000 kr. afhængigt af størrelse og materiale. Kontakt os for et hurtigt overslag.' },
         { question: 'Hvor lang tid tager det?', answer: 'Et typisk parcelhustag tager 1-3 uger. Du får altid en fast tidsplan, inden vi går i gang.' },
         { question: 'Kan jeg bo i huset imens?', answer: 'Ja. Vi afdækker taget dagligt, så din bolig er beskyttet, og du kan blive boende.' },
         { question: 'Giver I garanti?', answer: 'Ja, vi arbejder efter gældende normer og giver garanti på både materialer og udførelse.' },

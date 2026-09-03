@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 /**
- * Modtager leads fra tilbudsberegner, kontaktformular og lead magnet.
+ * Modtager leads fra kontaktformular og lead magnet.
  *
  * I produktion kobles dette til fx e-mail (Resend/SMTP), et CRM eller Supabase.
  * Lige nu valideres og logges leadet server-side, og der returneres en kvittering,
