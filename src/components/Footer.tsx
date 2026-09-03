@@ -64,13 +64,7 @@ export function Footer() {
         <div>
           <h3 className="text-sm font-semibold uppercase tracking-wider text-cream-100">Kontakt</h3>
           <ul className="mt-5 space-y-3 text-sm text-cream-100/70">
-            <li>
-              {site.legalName}
-              <br />
-              {site.address.street}
-              <br />
-              {site.address.postalCode} {site.address.city}
-            </li>
+            <li>{site.legalName}</li>
             <li>
               <a href={telHref} className="font-semibold text-cream-50 hover:underline">
                 Tlf. {site.phoneDisplay}

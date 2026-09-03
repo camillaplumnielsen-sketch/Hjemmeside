@@ -20,18 +20,12 @@ export function localBusinessSchema() {
     priceRange: '$$',
     image: `${site.url}/og-image.svg`,
     logo: `${site.url}/logo.svg`,
+    // Ingen streetAddress/geo – servicevirksomhed uden offentlig gadeadresse.
     address: {
       '@type': 'PostalAddress',
-      streetAddress: site.address.street,
-      postalCode: site.address.postalCode,
       addressLocality: site.address.city,
       addressRegion: site.address.region,
       addressCountry: site.address.country,
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: site.address.lat,
-      longitude: site.address.lng,
     },
     areaServed: site.areaServed.map((name) => ({ '@type': 'City', name })),
     openingHoursSpecification: [

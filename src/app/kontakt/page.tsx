@@ -14,8 +14,6 @@ export const metadata: Metadata = buildMetadata({
   keywords: ['kontakt tømrer Vejle', 'tilbud tømrer Vejle'],
 });
 
-const mapsQuery = encodeURIComponent(`${site.address.street}, ${site.address.postalCode} ${site.address.city}, Danmark`);
-
 export default function KontaktPage() {
   return (
     <>
@@ -72,27 +70,14 @@ export default function KontaktPage() {
                     </svg>
                   </span>
                   <span>
-                    <span className="block text-sm text-forest-500">Find os</span>
-                    <span className="block font-semibold text-forest-900">
-                      {site.address.street}, {site.address.postalCode} {site.address.city}
-                    </span>
+                    <span className="block text-sm text-forest-500">Dækker</span>
+                    <span className="block font-semibold text-forest-900">{site.areaServed.join(', ')}</span>
                   </span>
                 </div>
                 <p className="mt-4 border-t border-forest-100 pt-4 text-sm text-forest-600">
                   <span className="font-semibold text-forest-800">Åbningstider:</span> {site.openingHours}
                 </p>
               </div>
-            </div>
-
-            {/* Kort */}
-            <div className="mt-4 overflow-hidden rounded-2xl border border-forest-100 shadow-soft">
-              <iframe
-                title={`Kort over ${site.address.city}`}
-                src={`https://www.google.com/maps?q=${mapsQuery}&z=12&output=embed`}
-                className="h-64 w-full"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
             </div>
           </div>
 
