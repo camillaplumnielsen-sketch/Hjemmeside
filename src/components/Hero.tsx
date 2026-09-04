@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { SceneImage } from './SceneImage';
-import { site, telHref } from '@/lib/site';
 
 export function Hero() {
   return (
@@ -67,9 +66,6 @@ export function Hero() {
             <Link href="/cases" className="btn-ghost-light w-full sm:w-auto">
               Se projekter
             </Link>
-            <a href={telHref} className="mt-1 inline-flex items-center gap-2 text-sm font-semibold text-cream-100 sm:ml-2 sm:mt-0">
-              eller ring {site.phoneDisplay}
-            </a>
           </div>
         </motion.div>
       </div>
