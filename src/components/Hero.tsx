@@ -5,11 +5,6 @@ import { motion } from 'framer-motion';
 import { SceneImage } from './SceneImage';
 import { site, telHref } from '@/lib/site';
 
-const stat = [
-  { value: '2007', label: 'Etableret' },
-  { value: '10+', label: 'Erfarne håndværkere' },
-];
-
 export function Hero() {
   return (
     <section className="relative flex min-h-[92vh] items-center overflow-hidden bg-forest-950 pt-[70px] text-cream-50">
@@ -76,15 +71,6 @@ export function Hero() {
               eller ring {site.phoneDisplay}
             </a>
           </div>
-
-          <dl className="mt-14 grid max-w-sm grid-cols-2 gap-6 border-t border-cream-50/15 pt-8">
-            {stat.map((s) => (
-              <div key={s.label}>
-                <dt className="font-display text-2xl font-semibold text-cream-50 sm:text-3xl">{s.value}</dt>
-                <dd className="mt-1 text-xs text-cream-100/70">{s.label}</dd>
-              </div>
-            ))}
-          </dl>
         </motion.div>
       </div>
 
