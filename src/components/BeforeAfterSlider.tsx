@@ -14,12 +14,17 @@ export function BeforeAfterSlider({
   beforeLabel = 'Før',
   afterLabel = 'Efter',
   className = '',
+  beforeImage,
+  afterImage,
 }: {
   tone?: ProjectCase['tone'];
   seed?: number;
   beforeLabel?: string;
   afterLabel?: string;
   className?: string;
+  /** Rigtige billeder – bruges i stedet for SVG-placeholders, når begge er sat */
+  beforeImage?: string;
+  afterImage?: string;
 }) {
   const [position, setPosition] = useState(50);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -49,7 +54,12 @@ export function BeforeAfterSlider({
     >
       {/* Efter (bund) */}
       <div className="absolute inset-0">
-        <SceneImage tone={tone} variant="after" seed={seed} className="h-full w-full object-cover" rounded={false} />
+        {afterImage ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={afterImage} alt={afterLabel} className="h-full w-full object-cover" />
+        ) : (
+          <SceneImage tone={tone} variant="after" seed={seed} className="h-full w-full object-cover" rounded={false} />
+        )}
         <span className="absolute right-4 top-4 rounded-full bg-forest-800/85 px-3 py-1 text-xs font-semibold text-cream-50 backdrop-blur">
           {afterLabel}
         </span>
@@ -57,7 +67,12 @@ export function BeforeAfterSlider({
 
       {/* Før (top, klippet med clip-path så billedet bevarer fuld bredde) */}
       <div className="absolute inset-0" style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}>
-        <SceneImage tone={tone} variant="before" seed={seed} className="h-full w-full object-cover" rounded={false} />
+        {beforeImage ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={beforeImage} alt={beforeLabel} className="h-full w-full object-cover" />
+        ) : (
+          <SceneImage tone={tone} variant="before" seed={seed} className="h-full w-full object-cover" rounded={false} />
+        )}
         <span className="absolute left-4 top-4 rounded-full bg-forest-950/70 px-3 py-1 text-xs font-semibold text-cream-50 backdrop-blur">
           {beforeLabel}
         </span>

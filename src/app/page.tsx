@@ -65,14 +65,17 @@ export default function HomePage() {
               light
               eyebrow="Før / efter"
               title="Forvandlingen taler for sig selv"
-              description="Træk i håndtaget og se, hvordan vi løfter et slidt tag til noget, der holder i generationer."
+              description="Træk i håndtaget og se, hvordan vi løfter nedslidte vinduer til noget, der holder i generationer."
             />
             <Link href="/cases" className="btn-accent mt-8">
               Udforsk vores cases
             </Link>
           </div>
           <Reveal delay={0.1}>
-            <BeforeAfterSlider tone="roof" seed={1} />
+            <BeforeAfterSlider
+              beforeImage="/images/forside-foer-efter-vindue-foer.jpg"
+              afterImage="/images/forside-foer-efter-vindue-efter.jpg"
+            />
           </Reveal>
         </div>
       </section>
