@@ -29,7 +29,7 @@ export function CaseCard({ project, index = 0 }: { project: ProjectCase; index?:
       <div className="flex flex-1 flex-col p-6">
         <div className="flex items-center gap-2 text-xs font-medium text-forest-500">
           <MapPin />
-          {project.location} · {project.year}
+          {project.location}
         </div>
         <h3 className="mt-2 font-display text-lg font-semibold text-forest-900 group-hover:text-forest-700">
           {project.title}

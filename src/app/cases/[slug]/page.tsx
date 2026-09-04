@@ -50,9 +50,7 @@ export default function CaseDetailPage({ params }: { params: { slug: string } })
           <Breadcrumbs items={breadcrumbs} />
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <span className="rounded-full bg-forest-700 px-3 py-1 text-xs font-semibold text-cream-50">{project.category}</span>
-            <span className="text-sm font-medium text-forest-500">
-              {project.location} · {project.year} · {project.duration}
-            </span>
+            <span className="text-sm font-medium text-forest-500">{project.location}</span>
           </div>
           <h1 className="mt-4 max-w-3xl font-display text-display-md font-semibold text-balance text-forest-900">
             {project.title}
@@ -104,14 +102,6 @@ export default function CaseDetailPage({ params }: { params: { slug: string } })
               <div className="flex justify-between">
                 <dt className="text-forest-500">Lokation</dt>
                 <dd className="font-medium text-forest-800">{project.location}</dd>
-              </div>
-              <div className="flex justify-between">
-                <dt className="text-forest-500">Årstal</dt>
-                <dd className="font-medium text-forest-800">{project.year}</dd>
-              </div>
-              <div className="flex justify-between">
-                <dt className="text-forest-500">Varighed</dt>
-                <dd className="font-medium text-forest-800">{project.duration}</dd>
               </div>
             </dl>
             <Link href="/kontakt" className="btn-primary mt-6 w-full">
