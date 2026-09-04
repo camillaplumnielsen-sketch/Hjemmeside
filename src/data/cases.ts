@@ -21,9 +21,31 @@ export type ProjectCase = {
   highlight?: string;
   /** Sti til et rigtigt projektfoto – bruges i stedet for SVG-placeholders, når det er sat */
   image?: string;
+  /** Ekstra rigtige galleribilleder – bruges i stedet for SVG-placeholders i galleriet, når det er sat */
+  galleryImages?: string[];
 };
 
 export const cases: ProjectCase[] = [
+  {
+    slug: 'nyt-tag-betontagsten-vejle',
+    title: 'Nyt tag med betontagsten i Vejle',
+    category: 'Tag',
+    location: 'Vejle',
+    year: 2025,
+    summary: 'Nyt tag med nyt undertag, lægter og sorte/antracitfarvede betontagsten.',
+    description:
+      'Vi lagde et helt nyt tag med nyt undertag og nye lægter, afsluttet med sorte/antracitfarvede betontagsten. Nye zinkinddækninger i kip og skotrender samt nye tagrender sikrer et tæt og holdbart tag i mange år frem.',
+    scope: ['Nyt undertag', 'Nye lægter', 'Betontagsten i antracit', 'Nye zinkinddækninger', 'Nye tagrender'],
+    duration: '2 uger',
+    tone: 'roof',
+    gallery: 0,
+    image: '/images/case-nyt-tag-vejle-1.jpg',
+    galleryImages: [
+      '/images/case-nyt-tag-vejle-2.jpg',
+      '/images/case-nyt-tag-vejle-3.jpg',
+      '/images/case-nyt-tag-vejle-4.jpg',
+    ],
+  },
   {
     slug: 'tagudskiftning-jelling',
     title: 'Nyt tegltag på villa i Jelling',
