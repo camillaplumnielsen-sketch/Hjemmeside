@@ -23,13 +23,6 @@ const values = [
   { title: 'Lokalt engagement', description: 'Vi bor her selv. Vores ry i lokalområdet betyder alt for os.' },
 ];
 
-const timeline = [
-  { year: '2007', title: 'Virksomheden grundlægges', text: 'To brødre med passion for håndværk starter Brdr. Larsen i Bredsten.' },
-  { year: '2013', title: 'Voksende hold', text: 'Efterspørgslen stiger, og vi udvider med flere dygtige svende og lærlinge.' },
-  { year: '2019', title: 'Større projekter', text: 'Vi tager fat på totalrenoveringer og tilbygninger som totalentreprenør.' },
-  { year: 'I dag', title: '10-11 medarbejdere', text: 'Et fast, erfarent hold der dækker hele Vejle-området med kvalitetshåndværk.' },
-];
-
 const team = [
   { name: 'Larsen', role: 'Indehaver & tømrermester', tone: 'roof' as const },
   { name: 'Larsen', role: 'Indehaver & projektleder', tone: 'extension' as const },
@@ -81,22 +74,6 @@ export default function OmOsPage() {
               className="aspect-[4/5] w-full object-cover"
             />
           </Reveal>
-        </div>
-      </section>
-
-      {/* Tidslinje */}
-      <section className="surface-wood py-section">
-        <div className="container-max">
-          <SectionHeading align="center" eyebrow="Rejsen" title="Fra to mand til et helt hold" />
-          <ol className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {timeline.map((t, i) => (
-              <Reveal key={t.year} delay={i * 0.07} as="li" className="rounded-3xl border border-forest-100 bg-white p-6 shadow-soft">
-                <span className="font-display text-2xl font-semibold text-wood-600">{t.year}</span>
-                <h3 className="mt-2 font-display text-lg font-semibold text-forest-900">{t.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-forest-600">{t.text}</p>
-              </Reveal>
-            ))}
-          </ol>
         </div>
       </section>
 
