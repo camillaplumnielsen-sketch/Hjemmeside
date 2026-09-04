@@ -193,6 +193,23 @@ export const cases: ProjectCase[] = [
     gallery: 3,
     highlight: 'Unikt snedkerarbejde',
   },
+  {
+    slug: 'traebro-vejle-aa',
+    title: 'Ny trædækket gangbro over Vejle Å',
+    category: 'Special',
+    location: 'Vejle Å',
+    year: 2025,
+    summary: 'Skræddersyet gangbro med trædæk på stålramme, bygget hen over Vejle Å.',
+    description:
+      'En specialopgave, hvor vi byggede en gangbro over Vejle Å – med et solidt trædæk lagt oven på en eksisterende stålramme. Opgaven krævede præcist arbejde tæt på vandet, og resultatet er en flot og holdbar gangbro, der falder naturligt ind i naturen omkring åen.',
+    scope: ['Trædæk på stålramme', 'Tilpasning og opskæring på stedet', 'Fastgørelse og finish'],
+    duration: '2 dage',
+    tone: 'special',
+    gallery: 0,
+    image: '/images/case-bro-vejle-aa-1.jpg',
+    galleryImages: ['/images/case-bro-vejle-aa-2.jpg'],
+    highlight: 'Bygget over vand',
+  },
 ];
 
 export const caseCategories: CaseCategory[] = ['Tag', 'Tilbygning', 'Renovering', 'Vinduer', 'Carport', 'Special'];
