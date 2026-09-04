@@ -50,8 +50,8 @@ export function Hero() {
           </span>
 
           <h1 className="mt-6 font-display text-display-xl font-semibold text-balance">
-            Håndværk du kan stole på
-            <span className="block text-wood-300">i Bredsten og omegn</span>
+            Kvalitetshåndværk
+            <span className="block text-wood-300">siden 2007</span>
           </h1>
 
           <p className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-cream-100/85">
