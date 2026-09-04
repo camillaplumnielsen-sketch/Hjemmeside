@@ -19,6 +19,8 @@ export type ProjectCase = {
   /** Antal billeder i galleri (genereres som placeholders) */
   gallery: number;
   highlight?: string;
+  /** Sti til et rigtigt projektfoto – bruges i stedet for SVG-placeholders, når det er sat */
+  image?: string;
 };
 
 export const cases: ProjectCase[] = [
@@ -124,6 +126,21 @@ export const cases: ProjectCase[] = [
     tone: 'window',
     gallery: 3,
     highlight: 'Bedre indeklima',
+  },
+  {
+    slug: 'vinduer-erhvervsbygning-nr-snede',
+    title: 'Vinduesmontage i ny erhvervsbygning for Give Elementfabrik',
+    category: 'Vinduer',
+    location: 'Nr. Snede',
+    year: 2025,
+    summary: 'Montering af vinduer i en ny erhvervsbygning for Give Elementfabrik i Nr. Snede.',
+    description:
+      'Give Elementfabrik fik opført en ny erhvervsbygning i Nr. Snede, og vi stod for montering af vinduerne i facaden. Præcis opmåling og korrekt indbygning sikrer tæthed og god isolering – også når det er store vinduespartier i en erhvervsbygning.',
+    scope: ['Vinduesmontage i erhvervsbygning', 'Tilpasning til facadeelementer', 'Tætning og isolering'],
+    duration: '3 dage',
+    tone: 'window',
+    gallery: 0,
+    image: '/images/case-vinduer-nr-snede.jpg',
   },
   {
     slug: 'carport-give',

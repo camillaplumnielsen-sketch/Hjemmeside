@@ -10,7 +10,12 @@ export function CaseCard({ project, index = 0 }: { project: ProjectCase; index?:
     >
       <div className="relative aspect-[4/3] overflow-hidden">
         <div className="h-full w-full transition-transform duration-500 ease-premium group-hover:scale-105">
-          <SceneImage tone={project.tone} variant="after" seed={index} className="h-full w-full object-cover" rounded={false} />
+          {project.image ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={project.image} alt={project.title} className="h-full w-full object-cover" />
+          ) : (
+            <SceneImage tone={project.tone} variant="after" seed={index} className="h-full w-full object-cover" rounded={false} />
+          )}
         </div>
         <span className="absolute left-4 top-4 rounded-full bg-cream-50/95 px-3 py-1 text-xs font-semibold text-forest-800 shadow-soft backdrop-blur">
           {project.category}

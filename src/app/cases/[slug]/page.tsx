@@ -61,12 +61,24 @@ export default function CaseDetailPage({ params }: { params: { slug: string } })
         </div>
       </section>
 
-      {/* Før / efter */}
+      {/* Foto / Før-efter */}
       <section className="container-max py-14">
-        <SectionHeading eyebrow="Før / efter" title="Se forvandlingen" />
-        <div className="mt-8">
-          <BeforeAfterSlider tone={project.tone} seed={project.gallery} />
-        </div>
+        {project.image ? (
+          <>
+            <SectionHeading eyebrow="Fra projektet" title="Billede fra opgaven" />
+            <div className="mt-8 overflow-hidden rounded-3xl border border-forest-100 shadow-lift">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={project.image} alt={project.title} className="w-full object-cover" />
+            </div>
+          </>
+        ) : (
+          <>
+            <SectionHeading eyebrow="Før / efter" title="Se forvandlingen" />
+            <div className="mt-8">
+              <BeforeAfterSlider tone={project.tone} seed={project.gallery} />
+            </div>
+          </>
+        )}
       </section>
 
       {/* Beskrivelse + omfang */}
@@ -110,16 +122,18 @@ export default function CaseDetailPage({ params }: { params: { slug: string } })
       </section>
 
       {/* Galleri */}
-      <section className="container-max pb-section">
-        <h2 className="font-display text-2xl font-semibold text-forest-900">Galleri</h2>
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {Array.from({ length: project.gallery }).map((_, i) => (
-            <Reveal key={i} delay={i * 0.05} className="overflow-hidden rounded-2xl border border-forest-100">
-              <SceneImage tone={project.tone} variant={i % 3 === 2 ? 'before' : 'after'} seed={i + 1} className="aspect-[4/3] w-full object-cover" rounded={false} />
-            </Reveal>
-          ))}
-        </div>
-      </section>
+      {project.gallery > 0 && (
+        <section className="container-max pb-section">
+          <h2 className="font-display text-2xl font-semibold text-forest-900">Galleri</h2>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {Array.from({ length: project.gallery }).map((_, i) => (
+              <Reveal key={i} delay={i * 0.05} className="overflow-hidden rounded-2xl border border-forest-100">
+                <SceneImage tone={project.tone} variant={i % 3 === 2 ? 'before' : 'after'} seed={i + 1} className="aspect-[4/3] w-full object-cover" rounded={false} />
+              </Reveal>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Relaterede */}
       {related.length > 0 && (
