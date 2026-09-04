@@ -34,7 +34,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       url: `${site.url}/ydelser/${service.slug}`,
       locale: 'da_DK',
       type: 'website',
-      images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: service.heading }],
+      images: [{ url: '/og-image.png', width: 1200, height: 630, alt: service.heading }],
     },
   };
 }

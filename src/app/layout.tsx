@@ -49,13 +49,13 @@ export const metadata: Metadata = {
     siteName: site.legalName,
     title: `${site.legalName} – Kvalitetshåndværk siden 2007`,
     description: site.description,
-    images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: site.legalName }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: site.legalName }],
   },
   twitter: {
     card: 'summary_large_image',
     title: `${site.legalName} – Tømrer i Vejle & Bredsten`,
     description: site.description,
-    images: ['/og-image.svg'],
+    images: ['/og-image.png'],
   },
   robots: {
     index: true,

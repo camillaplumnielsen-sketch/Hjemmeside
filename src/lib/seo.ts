@@ -9,7 +9,7 @@ type SeoParams = {
   keywords?: string[];
 };
 
-const DEFAULT_OG_IMAGE = '/og-image.svg';
+const DEFAULT_OG_IMAGE = '/og-image.png';
 
 /**
  * Bygger et fuldt Metadata-objekt med canonical, Open Graph og Twitter cards.

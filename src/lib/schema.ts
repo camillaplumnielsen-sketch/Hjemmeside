@@ -18,7 +18,7 @@ export function localBusinessSchema() {
     email: site.email,
     foundingDate: String(site.founded),
     priceRange: '$$',
-    image: `${site.url}/og-image.svg`,
+    image: `${site.url}/og-image.png`,
     logo: `${site.url}/logo.svg`,
     // Ingen streetAddress/geo – servicevirksomhed uden offentlig gadeadresse.
     address: {
