@@ -26,13 +26,6 @@ const values = [
 const team = [
   { name: 'Dennis Plum Larsen', role: 'Indehaver & tømrermester', phone: '22 44 08 46', tone: 'roof' as const },
   { name: 'Kenneth Larsen', role: 'Indehaver & tømrermester', phone: '20 96 02 87', tone: 'extension' as const },
-  { name: 'Bjarne Larsen', role: 'Tømrersvend', tone: 'renovation' as const },
-  { name: 'Magne', role: 'Tømrersvend', tone: 'window' as const },
-  { name: 'Morten', role: 'Tømrerlærling', tone: 'carport' as const },
-  { name: 'Lasse', role: 'Lærling', tone: 'special' as const },
-  { name: 'Benjamin', role: 'Lærling', tone: 'roof' as const },
-  { name: 'Valdemar', role: 'Lærling', tone: 'extension' as const },
-  { name: 'Camilla', role: 'Ejendomsadministrator', phone: '25 31 87 17', tone: 'renovation' as const },
 ];
 
 export default function OmOsPage() {
@@ -99,7 +92,7 @@ export default function OmOsPage() {
       <section className="bg-cream-100 py-section">
         <div className="container-max">
           <SectionHeading align="center" eyebrow="Holdet" title="Menneskene bag håndværket" description="Et fast, erfarent hold der møder op med et smil – og går hjem med en opgave løst ordentligt." />
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 max-w-2xl mx-auto">
             {team.map((m, i) => (
               <Reveal key={m.name} delay={i * 0.06} className="overflow-hidden rounded-3xl border border-forest-100 bg-white shadow-soft">
                 <SceneImage tone={m.tone} variant="after" seed={i} className="aspect-square w-full object-cover" rounded={false} />
