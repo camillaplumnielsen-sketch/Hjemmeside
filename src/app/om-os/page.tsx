@@ -74,7 +74,12 @@ export default function OmOsPage() {
             </p>
           </div>
           <Reveal delay={0.1} className="overflow-hidden rounded-4xl border border-forest-100 shadow-lift">
-            <SceneImage tone="renovation" variant="after" seed={2} className="aspect-[4/3] w-full object-cover" rounded={false} />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/om-os-vaerksted.jpg"
+              alt="Værkstedet i Bredsten, hvor Tømrerfirmaet Brdr. Larsens projekter starter"
+              className="aspect-[4/5] w-full object-cover"
+            />
           </Reveal>
         </div>
       </section>
