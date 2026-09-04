@@ -46,7 +46,7 @@ export function Hero() {
         >
           <span className="inline-flex items-center gap-2 rounded-full border border-cream-50/20 bg-cream-50/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-cream-100 backdrop-blur-md">
             <span className="h-1.5 w-1.5 rounded-full bg-wood-400" />
-            Tømrer i Bredsten &amp; Vejle
+            Tømrer i Trekantsområdet
           </span>
 
           <h1 className="mt-6 font-display text-display-xl font-semibold text-balance">
