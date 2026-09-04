@@ -36,17 +36,26 @@ export default function KontaktPage() {
           {/* Kontaktinfo */}
           <div className="lg:col-span-2">
             <div className="space-y-4">
-              <a href={telHref} className="flex items-center gap-4 rounded-2xl border border-forest-100 bg-white p-5 shadow-soft transition-colors hover:border-forest-300">
-                <span className="flex h-12 w-12 flex-none items-center justify-center rounded-xl bg-forest-700 text-cream-50">
-                  <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5" aria-hidden="true">
-                    <path d="M6.5 3.5 9 4l1 4-2 1.5a11 11 0 0 0 5 5L14.5 12l4 1 .5 2.5a2 2 0 0 1-2.2 2.4A15.5 15.5 0 0 1 4.1 5.7 2 2 0 0 1 6.5 3.5Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
-                  </svg>
-                </span>
-                <span>
+              <div className="rounded-2xl border border-forest-100 bg-white p-5 shadow-soft">
+                <div className="flex items-center gap-4">
+                  <span className="flex h-12 w-12 flex-none items-center justify-center rounded-xl bg-forest-700 text-cream-50">
+                    <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5" aria-hidden="true">
+                      <path d="M6.5 3.5 9 4l1 4-2 1.5a11 11 0 0 0 5 5L14.5 12l4 1 .5 2.5a2 2 0 0 1-2.2 2.4A15.5 15.5 0 0 1 4.1 5.7 2 2 0 0 1 6.5 3.5Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
+                    </svg>
+                  </span>
                   <span className="block text-sm text-forest-500">Ring til os</span>
-                  <span className="block font-display text-lg font-semibold text-forest-900">{site.phoneDisplay}</span>
-                </span>
-              </a>
+                </div>
+                <div className="mt-4 space-y-3 border-t border-forest-100 pt-4">
+                  <a href={telHref} className="flex items-center justify-between text-forest-900 hover:text-forest-700">
+                    <span>Dennis Plum Larsen</span>
+                    <span className="font-display font-semibold">{site.phoneDisplay}</span>
+                  </a>
+                  <a href="tel:+4520960287" className="flex items-center justify-between text-forest-900 hover:text-forest-700">
+                    <span>Kenneth Larsen</span>
+                    <span className="font-display font-semibold">20 96 02 87</span>
+                  </a>
+                </div>
+              </div>
 
               <a href={mailHref} className="flex items-center gap-4 rounded-2xl border border-forest-100 bg-white p-5 shadow-soft transition-colors hover:border-forest-300">
                 <span className="flex h-12 w-12 flex-none items-center justify-center rounded-xl bg-forest-700 text-cream-50">
