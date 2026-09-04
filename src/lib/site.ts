@@ -33,9 +33,9 @@ export const site = {
 
 export const navigation = [
   { label: 'Forside', href: '/' },
+  { label: 'Om os', href: '/om-os' },
   { label: 'Ydelser', href: '/ydelser' },
   { label: 'Cases', href: '/cases' },
-  { label: 'Om os', href: '/om-os' },
   { label: 'Anmeldelser', href: '/kundeanmeldelser' },
   { label: 'Kontakt', href: '/kontakt' },
 ] as const;
