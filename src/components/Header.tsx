@@ -75,15 +75,21 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <a
-            href={telHref}
-            className={`hidden items-center gap-2 text-sm font-semibold sm:flex ${
+          <div
+            className={`hidden items-center gap-2 sm:flex ${
               lightText ? 'text-cream-50' : 'text-forest-800'
             }`}
           >
             <PhoneIcon />
-            {site.phoneDisplay}
-          </a>
+            <div className="flex flex-col leading-tight text-xs font-semibold">
+              <a href={telHref} className="hover:underline">
+                Dennis {site.phoneDisplay}
+              </a>
+              <a href="tel:+4520960287" className="hover:underline">
+                Kenneth 20 96 02 87
+              </a>
+            </div>
+          </div>
           <Link
             href="/kontakt"
             className={`hidden rounded-full px-6 py-2.5 text-sm font-semibold shadow-soft transition-all duration-300 ease-premium hover:-translate-y-0.5 hover:shadow-lift sm:inline-flex ${
@@ -129,7 +135,10 @@ export function Header() {
               ))}
               <div className="mt-3 flex flex-col gap-3 border-t border-forest-100 pt-4">
                 <a href={telHref} className="btn-outline w-full">
-                  <PhoneIcon /> Ring {site.phoneDisplay}
+                  <PhoneIcon /> Ring Dennis {site.phoneDisplay}
+                </a>
+                <a href="tel:+4520960287" className="btn-outline w-full">
+                  <PhoneIcon /> Ring Kenneth 20 96 02 87
                 </a>
                 <Link href="/kontakt" className="btn-primary w-full">
                   Få et gratis tilbud

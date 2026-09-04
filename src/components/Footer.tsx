@@ -67,7 +67,12 @@ export function Footer() {
             <li>{site.legalName}</li>
             <li>
               <a href={telHref} className="font-semibold text-cream-50 hover:underline">
-                Tlf. {site.phoneDisplay}
+                Dennis {site.phoneDisplay}
+              </a>
+            </li>
+            <li>
+              <a href="tel:+4520960287" className="font-semibold text-cream-50 hover:underline">
+                Kenneth 20 96 02 87
               </a>
             </li>
             <li>
