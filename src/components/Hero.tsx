@@ -60,8 +60,8 @@ export function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-cream-100/85">
-            Brdr. Larsen udfører tagarbejde, renovering, tilbygninger og specialopgaver i Bredsten, Vejle og omegn – med
-            personlig service og håndværk, du kan stole på.
+            Tømrer- og entreprenørfirma med håndværk i højsædet – fra første skitse til sidste søm. Vi hjælper private
+            og erhverv med tømrer-, tag- og entreprenøropgaver i Bredsten, Vejle, Jelling, Give – hele Vejle Kommune.
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
