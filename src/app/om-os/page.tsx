@@ -24,10 +24,8 @@ const values = [
 ];
 
 const team = [
-  { name: 'Larsen', role: 'Indehaver & tømrermester', tone: 'roof' as const },
-  { name: 'Larsen', role: 'Indehaver & projektleder', tone: 'extension' as const },
-  { name: 'Vores svende', role: 'Erfarne tømrere', tone: 'renovation' as const },
-  { name: 'Lærlinge', role: 'Fremtidens håndværkere', tone: 'special' as const },
+  { name: 'Dennis Plum Larsen', role: 'Indehaver & tømrermester', tone: 'roof' as const },
+  { name: 'Kenneth Larsen', role: 'Indehaver & tømrermester', tone: 'extension' as const },
 ];
 
 export default function OmOsPage() {
@@ -94,12 +92,12 @@ export default function OmOsPage() {
       <section className="bg-cream-100 py-section">
         <div className="container-max">
           <SectionHeading align="center" eyebrow="Holdet" title="Menneskene bag håndværket" description="Et fast, erfarent hold der møder op med et smil – og går hjem med en opgave løst ordentligt." />
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 max-w-2xl mx-auto">
             {team.map((m, i) => (
-              <Reveal key={m.role} delay={i * 0.06} className="overflow-hidden rounded-3xl border border-forest-100 bg-white shadow-soft">
+              <Reveal key={m.name} delay={i * 0.06} className="overflow-hidden rounded-3xl border border-forest-100 bg-white shadow-soft">
                 <SceneImage tone={m.tone} variant="after" seed={i} className="aspect-square w-full object-cover" rounded={false} />
                 <div className="p-5">
-                  <p className="font-display text-lg font-semibold text-forest-900">Brdr. {m.name}</p>
+                  <p className="font-display text-lg font-semibold text-forest-900">{m.name}</p>
                   <p className="text-sm text-wood-600">{m.role}</p>
                 </div>
               </Reveal>
