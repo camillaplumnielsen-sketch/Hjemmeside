@@ -191,7 +191,13 @@ export default function BoligudlejningPage() {
         </div>
       </section>
 
-      <CTASection title="Interesseret?" description="Kontakt os for yderligere information." primaryLabel="Kontakt os" />
+      <CTASection
+        title="Interesseret?"
+        description="Kontakt os for yderligere information."
+        primaryLabel="Kontakt os"
+        phoneDisplay="25 31 87 17"
+        phoneHref="tel:+4525318717"
+      />
     </>
   );
 }

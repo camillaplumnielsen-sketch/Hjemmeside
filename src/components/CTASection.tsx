@@ -6,10 +6,14 @@ export function CTASection({
   title = 'Klar til at komme i gang?',
   description = 'Få en uforpligtende snak og et gratis tilbud på din opgave. Vi vender tilbage hurtigt – som regel samme dag.',
   primaryLabel = 'Få et gratis tilbud',
+  phoneDisplay = site.phoneDisplay,
+  phoneHref = telHref,
 }: {
   title?: string;
   description?: string;
   primaryLabel?: string;
+  phoneDisplay?: string;
+  phoneHref?: string;
 }) {
   return (
     <section className="container-max py-section">
@@ -24,8 +28,8 @@ export function CTASection({
               <Link href="/kontakt" className="btn-accent w-full sm:w-auto">
                 {primaryLabel}
               </Link>
-              <a href={telHref} className="btn-ghost-light w-full sm:w-auto">
-                Ring {site.phoneDisplay}
+              <a href={phoneHref} className="btn-ghost-light w-full sm:w-auto">
+                Ring {phoneDisplay}
               </a>
             </div>
           </div>
