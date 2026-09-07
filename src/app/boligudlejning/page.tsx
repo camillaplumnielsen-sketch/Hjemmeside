@@ -45,42 +45,59 @@ export default function BoligudlejningPage() {
             <Reveal
               key={rental.slug}
               delay={i * 0.06}
-              className="rounded-3xl border border-forest-100 bg-white p-6 shadow-soft"
+              className="overflow-hidden rounded-3xl border border-forest-100 bg-white shadow-soft"
             >
-              <h3 className="font-display text-xl font-semibold text-forest-900">
-                {rental.name} <span className="text-forest-500">· {rental.location}</span>
-              </h3>
+              {rental.images && rental.images.length > 0 && (
+                <div className={`grid gap-0.5 bg-forest-100 ${rental.images.length === 1 ? 'grid-cols-1' : 'grid-cols-2'}`}>
+                  {rental.images.map((image, imgIndex) => (
+                    <div key={image} className="aspect-[4/3] w-full">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={image}
+                        alt={`${rental.name} – billede ${imgIndex + 1}`}
+                        className="h-full w-full object-cover"
+                      />
+                    </div>
+                  ))}
+                </div>
+              )}
 
-              <dl className="mt-5 space-y-3 border-t border-forest-100 pt-5 text-sm">
-                <div className="flex justify-between">
-                  <dt className="text-forest-500">Adresse</dt>
-                  <dd className="font-medium text-forest-800">{rental.address}</dd>
-                </div>
-                <div className="flex justify-between">
-                  <dt className="text-forest-500">Boligareal</dt>
-                  <dd className="font-medium text-forest-800">{rental.areaM2} m²</dd>
-                </div>
-                <div className="flex justify-between">
-                  <dt className="text-forest-500">Antal værelser</dt>
-                  <dd className="font-medium text-forest-800">{rental.rooms}</dd>
-                </div>
-                <div className="flex justify-between">
-                  <dt className="text-forest-500">Månedlig husleje</dt>
-                  <dd className="font-medium text-forest-800">{formatDKK(rental.rentMonthly)}</dd>
-                </div>
-                <div className="flex justify-between">
-                  <dt className="text-forest-500">Depositum</dt>
-                  <dd className="font-medium text-forest-800">{formatDKK(rental.deposit)}</dd>
-                </div>
-                <div className="flex justify-between">
-                  <dt className="text-forest-500">Ledig fra</dt>
-                  <dd className="font-medium text-forest-800">{rental.availableFrom}</dd>
-                </div>
-              </dl>
+              <div className="p-6">
+                <h3 className="font-display text-xl font-semibold text-forest-900">
+                  {rental.name} <span className="text-forest-500">· {rental.location}</span>
+                </h3>
 
-              <div className="mt-5 border-t border-forest-100 pt-5">
-                <h4 className="font-display text-base font-semibold text-forest-900">Beskrivelse</h4>
-                <p className="mt-2 text-sm leading-relaxed text-forest-600">{rental.description}</p>
+                <dl className="mt-5 space-y-3 border-t border-forest-100 pt-5 text-sm">
+                  <div className="flex justify-between">
+                    <dt className="text-forest-500">Adresse</dt>
+                    <dd className="font-medium text-forest-800">{rental.address}</dd>
+                  </div>
+                  <div className="flex justify-between">
+                    <dt className="text-forest-500">Boligareal</dt>
+                    <dd className="font-medium text-forest-800">{rental.areaM2} m²</dd>
+                  </div>
+                  <div className="flex justify-between">
+                    <dt className="text-forest-500">Antal værelser</dt>
+                    <dd className="font-medium text-forest-800">{rental.rooms}</dd>
+                  </div>
+                  <div className="flex justify-between">
+                    <dt className="text-forest-500">Månedlig husleje</dt>
+                    <dd className="font-medium text-forest-800">{formatDKK(rental.rentMonthly)}</dd>
+                  </div>
+                  <div className="flex justify-between">
+                    <dt className="text-forest-500">Depositum</dt>
+                    <dd className="font-medium text-forest-800">{formatDKK(rental.deposit)}</dd>
+                  </div>
+                  <div className="flex justify-between">
+                    <dt className="text-forest-500">Ledig fra</dt>
+                    <dd className="font-medium text-forest-800">{rental.availableFrom}</dd>
+                  </div>
+                </dl>
+
+                <div className="mt-5 border-t border-forest-100 pt-5">
+                  <h4 className="font-display text-base font-semibold text-forest-900">Beskrivelse</h4>
+                  <p className="mt-2 text-sm leading-relaxed text-forest-600">{rental.description}</p>
+                </div>
               </div>
             </Reveal>
           ))}
