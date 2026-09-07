@@ -51,6 +51,7 @@ export const rentalProjects: RentalProject[] = [
     area: '112 m²',
     description:
       'Dobbelthuse beliggende i et naturskønt område på lukket villavej i Ny Nørup, midt mellem Billund og Vejle.',
+    image: '/images/project-lindeparken.jpg',
   },
   {
     slug: 'kirsten-madsens-vej',
