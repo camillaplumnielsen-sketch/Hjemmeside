@@ -16,7 +16,7 @@ export const rentalProjects: RentalProject[] = [
     location: 'Ødsted, 7100 Vejle',
     units: '14 lejemål',
     buildYears: '2017–2018',
-    area: '105 m²',
+    area: '94 m²',
     description:
       'Lejeboligerne er opført som gennemmurede boliger og ligger i en nyere udstykning i Ødsted, hvor målet er at skabe et boligområde, der tilpasser sig det smukke og kuperede landskab og udnytter de mange stiforbindelser, der er i området – blandt andet til skole, idrætshal og resten af byen.',
     image: '/images/project-lille-moelkaer.jpg',
