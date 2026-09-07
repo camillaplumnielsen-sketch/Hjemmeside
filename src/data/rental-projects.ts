@@ -62,5 +62,6 @@ export const rentalProjects: RentalProject[] = [
     area: '105–112 m²',
     description:
       'Udstykningen er smukt placeret midt i Ågård, hvor den gamle jernlåge og den kæmpe blodbøg gennem tiden har været med til at danne rammerne for en driftig tid og et samlingspunkt for byens borgere. Udstykningen er derfor foretaget med stor respekt for historien og med fokus på fællesskab og nærhed til grøn natur. Hver bolig er individuelt opført og tilpasset grunden med fokus på terrænforholdene og de ydre rammer.',
+    image: '/images/project-kirsten-madsens-vej.jpg',
   },
 ];
