@@ -35,7 +35,7 @@ export function Testimonials({ limit }: { limit?: number }) {
               <div>
                 <p className="text-sm font-semibold text-forest-900">{t.name}</p>
                 <p className="text-xs text-forest-500">
-                  {t.location} · {sourceLabel[t.source]}
+                  {t.location ? `${t.location} · ${sourceLabel[t.source]}` : sourceLabel[t.source]}
                 </p>
               </div>
             </div>
