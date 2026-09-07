@@ -30,6 +30,7 @@ export const rentalProjects: RentalProject[] = [
     area: '107 m²',
     description:
       'Lejeboligerne er opført som gennemmurede dobbelthuse i et meget attraktivt kvarter på lukket villavej i Skibet.',
+    image: '/images/project-praestegaardsvej.jpg',
   },
   {
     slug: 'moelkaervej-6',
@@ -39,12 +40,13 @@ export const rentalProjects: RentalProject[] = [
     buildYears: '2020–2021',
     area: '104–107 m²',
     description: 'Boligerne opføres i 2 typer og ligger i et meget attraktivt område i Ødsted med smuk natur.',
+    image: '/images/project-moelkaervej-6.jpg',
   },
   {
     slug: 'lindeparken-ny-noerup-projekt',
     name: 'Lindeparken',
     location: 'Ny Nørup',
-    units: '12 lejemål',
+    units: '14 lejemål',
     buildYears: '2021–2023',
     area: '112 m²',
     description:
