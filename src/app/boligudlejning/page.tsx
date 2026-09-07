@@ -34,6 +34,11 @@ export default function BoligudlejningPage() {
             funktionalitet, komfort og lavt vedligehold. Vi vælger materialer, som holder, og planløsninger, der
             fungerer i hverdagen.
           </p>
+          <p className="mt-4 max-w-2xl text-pretty text-lg text-cream-100/85">
+            Som bygherre på egne boligprojekter stiller vi de samme høje krav til vores egne byggerier, som vi gør til
+            opgaver for vores kunder. Når vi bygger boliger til udlejning, tænker vi langsigtet. Vi bygger ikke for at
+            sælge hurtigt videre – vi bygger for at skabe gode hjem, som mennesker skal bo i mange år frem.
+          </p>
         </div>
       </section>
 

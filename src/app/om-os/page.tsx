@@ -49,6 +49,21 @@ export default function OmOsPage() {
         </div>
       </section>
 
+      {/* Introduktion */}
+      <section className="container-max py-section">
+        <div className="max-w-3xl">
+          <SectionHeading
+            eyebrow="Hvem vi er"
+            title="Lokalt håndværk og langsigtede løsninger"
+            description="Brdr. Larsen er en familieejet virksomhed med rødder i det lokale område."
+          />
+          <p className="mt-6 prose-brand">
+            Vi har gennem årene opbygget erfaring inden for nybyggeri, renovering, tagarbejde, tilbygninger og
+            specialopgaver. Vores mål er altid at levere løsninger, vi selv kan være stolte af.
+          </p>
+        </div>
+      </section>
+
       {/* Historie */}
       <section className="container-max py-section">
         <div className="grid items-center gap-12 lg:grid-cols-2">
