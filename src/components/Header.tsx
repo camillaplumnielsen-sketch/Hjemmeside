@@ -47,12 +47,12 @@ export function Header() {
       <div className="container-max flex h-[70px] items-center justify-between">
         <Logo light={lightText} />
 
-        <nav className="hidden items-center gap-1 lg:flex" aria-label="Hovedmenu">
+        <nav className="hidden items-center gap-0.5 xl:flex" aria-label="Hovedmenu">
           {navigation.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className={`relative rounded-full px-4 py-2 text-sm font-medium transition-colors ${
+              className={`relative whitespace-nowrap rounded-full px-3 py-2 text-sm font-medium transition-colors ${
                 lightText
                   ? isActive(item.href)
                     ? 'text-cream-50'
@@ -81,18 +81,18 @@ export function Header() {
             }`}
           >
             <PhoneIcon />
-            <div className="flex flex-col leading-tight text-xs font-semibold">
+            <div className="flex flex-col whitespace-nowrap leading-tight text-xs font-semibold">
               <a href={telHref} className="hover:underline">
-                Dennis {site.phoneDisplay}
+                {site.phoneDisplay}
               </a>
               <a href="tel:+4520960287" className="hover:underline">
-                Kenneth 20 96 02 87
+                20 96 02 87
               </a>
             </div>
           </div>
           <Link
             href="/kontakt"
-            className={`hidden rounded-full px-6 py-2.5 text-sm font-semibold shadow-soft transition-all duration-300 ease-premium hover:-translate-y-0.5 hover:shadow-lift sm:inline-flex ${
+            className={`hidden shrink-0 whitespace-nowrap rounded-full px-5 py-2.5 text-sm font-semibold shadow-soft transition-all duration-300 ease-premium hover:-translate-y-0.5 hover:shadow-lift sm:inline-flex ${
               lightText ? 'bg-cream-50 text-forest-900 hover:bg-white' : 'bg-forest-700 text-cream-50 hover:bg-forest-800'
             }`}
           >
@@ -101,7 +101,7 @@ export function Header() {
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
-            className={`flex h-10 w-10 items-center justify-center rounded-full border lg:hidden ${
+            className={`flex h-10 w-10 items-center justify-center rounded-full border xl:hidden ${
               lightText ? 'border-cream-50/30 text-cream-50' : 'border-forest-200 text-forest-800'
             }`}
             aria-label={open ? 'Luk menu' : 'Åbn menu'}
@@ -119,7 +119,7 @@ export function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -12 }}
             transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
-            className="absolute inset-x-0 top-[70px] border-b border-forest-100 bg-cream-50 shadow-lift lg:hidden"
+            className="absolute inset-x-0 top-[70px] border-b border-forest-100 bg-cream-50 shadow-lift xl:hidden"
           >
             <nav className="container-max flex flex-col gap-1 py-4" aria-label="Mobilmenu">
               {navigation.map((item) => (

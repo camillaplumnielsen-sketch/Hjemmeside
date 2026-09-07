@@ -36,6 +36,7 @@ export const navigation = [
   { label: 'Om os', href: '/om-os' },
   { label: 'Ydelser', href: '/ydelser' },
   { label: 'Cases', href: '/cases' },
+  { label: 'Boligudlejning', href: '/boligudlejning' },
   { label: 'Anmeldelser', href: '/kundeanmeldelser' },
   { label: 'Kontakt', href: '/kontakt' },
 ] as const;

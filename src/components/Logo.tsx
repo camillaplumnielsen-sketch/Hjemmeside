@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export function Logo({ light = false }: { light?: boolean }) {
   return (
-    <Link href="/" className="group flex items-center gap-2.5" aria-label="Brdr. Larsen – forside">
+    <Link href="/" className="group flex shrink-0 items-center gap-2.5 whitespace-nowrap" aria-label="Brdr. Larsen – forside">
       {/* Hvid baggrundschip, så logoets sorte streger altid har kontrast – både over mørk hero og lys header */}
       <span className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-cream-50 p-1 shadow-soft">
         {/* eslint-disable-next-line @next/next/no-img-element */}
