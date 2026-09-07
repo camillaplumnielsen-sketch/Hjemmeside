@@ -6,6 +6,7 @@ import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { SetHeaderTheme } from '@/components/HeaderTheme';
 import { buildMetadata } from '@/lib/seo';
 import { rentals, formatDKK } from '@/data/rentals';
+import { mailHref } from '@/lib/site';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Boligudlejning – Moderne lejeboliger',
@@ -81,6 +82,29 @@ export default function BoligudlejningPage() {
             </Reveal>
           ))}
         </div>
+      </section>
+
+      <section className="container-max pb-section">
+        <Reveal className="rounded-3xl border border-forest-100 bg-white p-6 shadow-soft sm:p-8">
+          <p className="text-forest-700">
+            Har du spørgsmål til ledige lejemål, fremvisninger, venteliste eller eksisterende lejemål, kan du
+            kontakte vores ejendomsadministrator.
+          </p>
+          <div className="mt-5 flex flex-col gap-4 border-t border-forest-100 pt-5 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p className="font-display text-lg font-semibold text-forest-900">Camilla Plum Nielsen</p>
+              <p className="text-sm text-wood-600">Ejendomsadministrator</p>
+            </div>
+            <div className="flex flex-col gap-1 text-sm sm:items-end">
+              <a href="tel:+4525318717" className="font-semibold text-forest-800 hover:underline">
+                Telefon: 25 31 87 17
+              </a>
+              <a href={mailHref} className="text-forest-600 hover:underline">
+                E-mail: vejle.brdrlarsen@outlook.dk
+              </a>
+            </div>
+          </div>
+        </Reveal>
       </section>
 
       <CTASection title="Interesseret?" description="Kontakt os for yderligere information." primaryLabel="Kontakt os" />
