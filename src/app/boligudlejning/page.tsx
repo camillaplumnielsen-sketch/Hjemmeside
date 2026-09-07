@@ -8,6 +8,7 @@ import { SetHeaderTheme } from '@/components/HeaderTheme';
 import { buildMetadata } from '@/lib/seo';
 import { rentals, formatDKK } from '@/data/rentals';
 import { rentalProjects } from '@/data/rental-projects';
+import { upcomingProjects } from '@/data/upcoming-projects';
 import { mailHref } from '@/lib/site';
 
 export const metadata: Metadata = buildMetadata({
@@ -80,6 +81,37 @@ export default function BoligudlejningPage() {
               <div className="mt-5 border-t border-forest-100 pt-5">
                 <h4 className="font-display text-base font-semibold text-forest-900">Beskrivelse</h4>
                 <p className="mt-2 text-sm leading-relaxed text-forest-600">{rental.description}</p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      <section className="container-max pb-section">
+        <SectionHeading eyebrow="Kommende projekter" title="Nye boligprojekter på vej" />
+
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {upcomingProjects.map((project, i) => (
+            <Reveal
+              key={project.slug}
+              delay={i * 0.06}
+              className="overflow-hidden rounded-3xl border border-forest-100 bg-white shadow-soft"
+            >
+              <div className="relative aspect-[4/3] w-full">
+                {project.image ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={project.image} alt={project.name} className="h-full w-full object-cover" />
+                ) : (
+                  <SceneImage tone="special" variant="after" seed={i} className="h-full w-full object-cover" rounded={false} />
+                )}
+                <span className="absolute left-4 top-4 rounded-full bg-forest-900/90 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-cream-50">
+                  Kommende projekt
+                </span>
+              </div>
+              <div className="p-6">
+                <h3 className="font-display text-lg font-semibold text-forest-900">{project.name}</h3>
+                <p className="text-sm text-forest-500">{project.location}</p>
+                <p className="mt-4 text-sm leading-relaxed text-forest-600">{project.description}</p>
               </div>
             </Reveal>
           ))}
