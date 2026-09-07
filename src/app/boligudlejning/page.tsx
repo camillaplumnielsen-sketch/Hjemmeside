@@ -1,11 +1,13 @@
 import type { Metadata } from 'next';
 import { SectionHeading } from '@/components/SectionHeading';
 import { Reveal } from '@/components/Reveal';
+import { SceneImage } from '@/components/SceneImage';
 import { CTASection } from '@/components/CTASection';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { SetHeaderTheme } from '@/components/HeaderTheme';
 import { buildMetadata } from '@/lib/seo';
 import { rentals, formatDKK } from '@/data/rentals';
+import { rentalProjects } from '@/data/rental-projects';
 import { mailHref } from '@/lib/site';
 
 export const metadata: Metadata = buildMetadata({
@@ -105,6 +107,56 @@ export default function BoligudlejningPage() {
             </div>
           </div>
         </Reveal>
+      </section>
+
+      <section className="surface-wood py-section">
+        <div className="container-max">
+          <SectionHeading
+            eyebrow="Tidligere projekter"
+            title="Gennemførte boligprojekter"
+            description="Her kan du se et udvalg af vores tidligere bygge- og udlejningsprojekter."
+          />
+
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {rentalProjects.map((project, i) => (
+              <Reveal
+                key={project.slug}
+                delay={i * 0.06}
+                className="overflow-hidden rounded-3xl border border-forest-100 bg-white shadow-soft"
+              >
+                <div className="aspect-[4/3] w-full">
+                  {project.image ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={project.image} alt={project.name} className="h-full w-full object-cover" />
+                  ) : (
+                    <SceneImage tone="renovation" variant="after" seed={i} className="h-full w-full object-cover" rounded={false} />
+                  )}
+                </div>
+                <div className="p-6">
+                  <h3 className="font-display text-lg font-semibold text-forest-900">{project.name}</h3>
+                  <p className="text-sm text-forest-500">{project.location}</p>
+
+                  <dl className="mt-4 space-y-2 border-t border-forest-100 pt-4 text-sm">
+                    <div className="flex justify-between">
+                      <dt className="text-forest-500">Lejemål</dt>
+                      <dd className="font-medium text-forest-800">{project.units}</dd>
+                    </div>
+                    <div className="flex justify-between">
+                      <dt className="text-forest-500">Byggeår</dt>
+                      <dd className="font-medium text-forest-800">{project.buildYears}</dd>
+                    </div>
+                    <div className="flex justify-between">
+                      <dt className="text-forest-500">Boligareal</dt>
+                      <dd className="font-medium text-forest-800">{project.area}</dd>
+                    </div>
+                  </dl>
+
+                  <p className="mt-4 text-sm leading-relaxed text-forest-600">{project.description}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
       </section>
 
       <CTASection title="Interesseret?" description="Kontakt os for yderligere information." primaryLabel="Kontakt os" />
