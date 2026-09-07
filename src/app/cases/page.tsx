@@ -7,7 +7,7 @@ import { SetHeaderTheme } from '@/components/HeaderTheme';
 import { buildMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Cases & projekter – Tømrer i Vejle',
+  title: 'Projekter – Tømrer i Vejle',
   description:
     'Se udvalgte tømrerprojekter fra Brdr. Larsen: nye tage, tilbygninger, renoveringer og specialopgaver i Vejle, Bredsten og omegn. Lad dig inspirere.',
   path: '/cases',
@@ -20,7 +20,7 @@ export default function CasesPage() {
       <SetHeaderTheme theme="dark" />
       <section className="bg-cream-100 pt-[110px]">
         <div className="container-max py-14">
-          <Breadcrumbs items={[{ name: 'Forside', path: '/' }, { name: 'Cases', path: '/cases' }]} />
+          <Breadcrumbs items={[{ name: 'Forside', path: '/' }, { name: 'Projekter', path: '/cases' }]} />
           <div className="mt-8">
             <SectionHeading
               eyebrow="Projektbibliotek"

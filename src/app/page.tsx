@@ -44,7 +44,7 @@ export default function HomePage() {
             description="Rigtige projekter fra Vejle, Bredsten og omegn. Kvalitet du kan se – og kunder der anbefaler os videre."
           />
           <Link href="/cases" className="btn-outline hidden sm:inline-flex">
-            Se alle cases
+            Se alle projekter
           </Link>
         </div>
         <div className="mt-12">
@@ -52,7 +52,7 @@ export default function HomePage() {
         </div>
         <div className="mt-8 sm:hidden">
           <Link href="/cases" className="btn-outline w-full">
-            Se alle cases
+            Se alle projekter
           </Link>
         </div>
       </section>
@@ -68,7 +68,7 @@ export default function HomePage() {
               description="Træk i håndtaget og se, hvordan vi løfter nedslidte vinduer til noget, der holder i generationer."
             />
             <Link href="/cases" className="btn-accent mt-8">
-              Udforsk vores cases
+              Udforsk vores projekter
             </Link>
           </div>
           <Reveal delay={0.1}>

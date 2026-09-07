@@ -36,7 +36,7 @@ export default function CaseDetailPage({ params }: { params: { slug: string } })
   const related = cases.filter((c) => c.slug !== project.slug && c.category === project.category).slice(0, 3);
   const breadcrumbs = [
     { name: 'Forside', path: '/' },
-    { name: 'Cases', path: '/cases' },
+    { name: 'Projekter', path: '/cases' },
     { name: project.title, path: `/cases/${project.slug}` },
   ];
 

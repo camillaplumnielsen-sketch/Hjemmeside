@@ -60,7 +60,7 @@ export function Footer() {
           <h3 className="text-sm font-semibold uppercase tracking-wider text-cream-100">Genveje</h3>
           <ul className="mt-5 space-y-3 text-sm">
             {[
-              { label: 'Cases', href: '/cases' },
+              { label: 'Projekter', href: '/cases' },
               { label: 'Om os', href: '/om-os' },
               { label: 'Kundeanmeldelser', href: '/kundeanmeldelser' },
               { label: 'Kontakt', href: '/kontakt' },
