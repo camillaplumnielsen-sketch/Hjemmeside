@@ -45,13 +45,19 @@ export default function KontaktPage() {
                   </span>
                   <span className="block text-sm text-forest-500">Ring til os</span>
                 </div>
-                <div className="mt-4 space-y-3 border-t border-forest-100 pt-4">
+                <div className="mt-4 space-y-4 border-t border-forest-100 pt-4">
                   <a href={telHref} className="flex items-center justify-between text-forest-900 hover:text-forest-700">
-                    <span>Dennis Plum Larsen</span>
+                    <span>
+                      <span className="block font-medium">Dennis Plum Larsen</span>
+                      <span className="block text-xs text-forest-500">Indehaver &amp; tømrermester</span>
+                    </span>
                     <span className="font-display font-semibold">{site.phoneDisplay}</span>
                   </a>
                   <a href="tel:+4520960287" className="flex items-center justify-between text-forest-900 hover:text-forest-700">
-                    <span>Kenneth Larsen</span>
+                    <span>
+                      <span className="block font-medium">Kenneth Larsen</span>
+                      <span className="block text-xs text-forest-500">Indehaver &amp; tømrermester</span>
+                    </span>
                     <span className="font-display font-semibold">20 96 02 87</span>
                   </a>
                 </div>

@@ -23,23 +23,6 @@ const values = [
   { title: 'Lokalt engagement', description: 'Vi bor her selv. Vores ry i lokalområdet betyder alt for os.' },
 ];
 
-const team = [
-  {
-    name: 'Dennis Plum Larsen',
-    role: 'Indehaver & tømrermester',
-    phone: '22 44 08 46',
-    tone: 'roof' as const,
-    image: '/images/dennis-plum-larsen.jpg',
-  },
-  {
-    name: 'Kenneth Larsen',
-    role: 'Indehaver & tømrermester',
-    phone: '20 96 02 87',
-    tone: 'extension' as const,
-    image: '/images/kenneth-larsen.jpg',
-  },
-];
-
 export default function OmOsPage() {
   return (
     <>
@@ -97,34 +80,6 @@ export default function OmOsPage() {
               <p className="mt-2 text-sm leading-relaxed text-forest-600">{v.description}</p>
             </Reveal>
           ))}
-        </div>
-      </section>
-
-      {/* Team */}
-      <section className="bg-cream-100 py-section">
-        <div className="container-max">
-          <SectionHeading align="center" eyebrow="Holdet" title="Menneskene bag håndværket" description="Et fast, erfarent hold der møder op med et smil – og går hjem med en opgave løst ordentligt." />
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 max-w-2xl mx-auto">
-            {team.map((m, i) => (
-              <Reveal key={m.name} delay={i * 0.06} className="overflow-hidden rounded-3xl border border-forest-100 bg-white shadow-soft">
-                {m.image ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img src={m.image} alt={m.name} className="aspect-square w-full object-cover" />
-                ) : (
-                  <SceneImage tone={m.tone} variant="after" seed={i} className="aspect-square w-full object-cover" rounded={false} />
-                )}
-                <div className="p-5">
-                  <p className="font-display text-lg font-semibold text-forest-900">{m.name}</p>
-                  <p className="text-sm text-wood-600">{m.role}</p>
-                  {m.phone && (
-                    <a href={`tel:${m.phone.replace(/\s/g, '')}`} className="mt-2 inline-block text-sm font-semibold text-forest-700 hover:underline">
-                      {m.phone}
-                    </a>
-                  )}
-                </div>
-              </Reveal>
-            ))}
-          </div>
         </div>
       </section>
 
