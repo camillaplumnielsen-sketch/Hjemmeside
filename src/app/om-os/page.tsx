@@ -24,8 +24,20 @@ const values = [
 ];
 
 const team = [
-  { name: 'Dennis Plum Larsen', role: 'Indehaver & tømrermester', phone: '22 44 08 46', tone: 'roof' as const },
-  { name: 'Kenneth Larsen', role: 'Indehaver & tømrermester', phone: '20 96 02 87', tone: 'extension' as const },
+  {
+    name: 'Dennis Plum Larsen',
+    role: 'Indehaver & tømrermester',
+    phone: '22 44 08 46',
+    tone: 'roof' as const,
+    image: '/images/dennis-plum-larsen.jpg',
+  },
+  {
+    name: 'Kenneth Larsen',
+    role: 'Indehaver & tømrermester',
+    phone: '20 96 02 87',
+    tone: 'extension' as const,
+    image: '/images/kenneth-larsen.jpg',
+  },
 ];
 
 export default function OmOsPage() {
@@ -95,7 +107,12 @@ export default function OmOsPage() {
           <div className="mt-12 grid gap-6 sm:grid-cols-2 max-w-2xl mx-auto">
             {team.map((m, i) => (
               <Reveal key={m.name} delay={i * 0.06} className="overflow-hidden rounded-3xl border border-forest-100 bg-white shadow-soft">
-                <SceneImage tone={m.tone} variant="after" seed={i} className="aspect-square w-full object-cover" rounded={false} />
+                {m.image ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={m.image} alt={m.name} className="aspect-square w-full object-cover" />
+                ) : (
+                  <SceneImage tone={m.tone} variant="after" seed={i} className="aspect-square w-full object-cover" rounded={false} />
+                )}
                 <div className="p-5">
                   <p className="font-display text-lg font-semibold text-forest-900">{m.name}</p>
                   <p className="text-sm text-wood-600">{m.role}</p>
