@@ -28,6 +28,7 @@ export const site = {
   cvr: '30546350',
   social: {
     facebook: 'https://www.facebook.com/larsenbrdr/?locale=da_DK',
+    instagram: 'https://www.instagram.com/brdr.larsen/',
   },
 } as const;
 
