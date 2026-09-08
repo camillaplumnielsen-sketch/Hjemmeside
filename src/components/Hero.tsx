@@ -2,13 +2,12 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { SceneImage } from './SceneImage';
 
 export function Hero() {
   return (
     <section className="relative flex min-h-[92vh] items-center overflow-hidden bg-forest-950 pt-[70px] text-cream-50">
-      {/* Baggrund: video hvis tilgængelig, ellers stiliseret scene.
-          Læg /public/hero.mp4 (tag-/droneoptagelser) ind for at aktivere video. */}
+      {/* Baggrund: rigtigt håndværksfoto.
+          Læg /public/hero.mp4 (tag-/droneoptagelser) ind for at aktivere video i stedet. */}
       <div className="absolute inset-0">
         <motion.div
           initial={{ scale: 1.12 }}
@@ -16,19 +15,12 @@ export function Hero() {
           transition={{ duration: 12, ease: 'easeOut' }}
           className="h-full w-full"
         >
-          <video
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/forside-haandvaerk.jpg"
+            alt="Håndværker tilskærer tømmer på en byggeplads"
             className="h-full w-full object-cover"
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster="/hero-poster.svg"
-          >
-            {/* <source src="/hero.mp4" type="video/mp4" /> */}
-          </video>
-          <div className="absolute inset-0">
-            <SceneImage tone="hero" variant="neutral" className="h-full w-full object-cover" rounded={false} />
-          </div>
+          />
         </motion.div>
         {/* Læselags-gradient */}
         <div className="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/70 to-forest-950/40" />
