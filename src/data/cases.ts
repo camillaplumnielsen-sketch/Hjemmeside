@@ -23,6 +23,9 @@ export type ProjectCase = {
   image?: string;
   /** Ekstra rigtige galleribilleder – bruges i stedet for SVG-placeholders i galleriet, når det er sat */
   galleryImages?: string[];
+  /** Rigtige før/efter-billeder til den interaktive slider – bruges i stedet for SVG-placeholders, når begge er sat */
+  beforeImage?: string;
+  afterImage?: string;
 };
 
 export const cases: ProjectCase[] = [
@@ -163,6 +166,23 @@ export const cases: ProjectCase[] = [
     tone: 'window',
     gallery: 0,
     image: '/images/case-vinduer-nr-snede.jpg',
+  },
+  {
+    slug: 'vinduesudskiftning-torvehallerne-vejle',
+    title: 'Vinduesudskiftning i Torvehallerne Vejle',
+    category: 'Vinduer',
+    location: 'Vejle',
+    year: 2025,
+    summary: 'Udskiftning af vinduer som led i en omfattende istandsættelse af hotelværelser i hjertet af Vejle.',
+    description:
+      'Et spændende projekt i hjertet af Vejle, hvor vi er i gang med en omfattende istandsættelse af hotelværelserne i en del af Torvehallerne. Som en del af arbejdet har vi udskiftet vinduerne i facaden, så bygningen fremstår tæt og tidssvarende – uden at gå på kompromis med det oprindelige udtryk.',
+    scope: ['Udskiftning af vinduer', 'Istandsættelse af hotelværelser', 'Tilpasning til bygningens oprindelige udtryk'],
+    duration: 'Igangværende',
+    tone: 'window',
+    gallery: 0,
+    beforeImage: '/images/case-torvehallerne-foer.jpg',
+    afterImage: '/images/case-torvehallerne-efter.jpg',
+    highlight: 'Hjertet af Vejle',
   },
   {
     slug: 'carport-give',

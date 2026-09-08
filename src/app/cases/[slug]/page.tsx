@@ -61,7 +61,14 @@ export default function CaseDetailPage({ params }: { params: { slug: string } })
 
       {/* Foto / Før-efter */}
       <section className="container-max py-14">
-        {project.image ? (
+        {project.beforeImage && project.afterImage ? (
+          <>
+            <SectionHeading eyebrow="Før / efter" title="Se forvandlingen" />
+            <div className="mt-8">
+              <BeforeAfterSlider beforeImage={project.beforeImage} afterImage={project.afterImage} />
+            </div>
+          </>
+        ) : project.image ? (
           <>
             <SectionHeading eyebrow="Fra projektet" title="Billede fra opgaven" />
             <div className="mt-8 overflow-hidden rounded-3xl border border-forest-100 shadow-lift">

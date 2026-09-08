@@ -3,6 +3,8 @@ import { SceneImage } from './SceneImage';
 import type { ProjectCase } from '@/data/cases';
 
 export function CaseCard({ project, index = 0 }: { project: ProjectCase; index?: number }) {
+  const thumbnail = project.image ?? project.afterImage;
+
   return (
     <Link
       href={`/cases/${project.slug}`}
@@ -10,9 +12,9 @@ export function CaseCard({ project, index = 0 }: { project: ProjectCase; index?:
     >
       <div className="relative aspect-[4/3] overflow-hidden">
         <div className="h-full w-full transition-transform duration-500 ease-premium group-hover:scale-105">
-          {project.image ? (
+          {thumbnail ? (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={project.image} alt={project.title} className="h-full w-full object-cover" />
+            <img src={thumbnail} alt={project.title} className="h-full w-full object-cover" />
           ) : (
             <SceneImage tone={project.tone} variant="after" seed={index} className="h-full w-full object-cover" rounded={false} />
           )}
