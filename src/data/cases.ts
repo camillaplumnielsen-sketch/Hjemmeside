@@ -185,6 +185,23 @@ export const cases: ProjectCase[] = [
     highlight: 'Hjertet af Vejle',
   },
   {
+    slug: 'vindueselementer-lejlighedskompleks-fredericia',
+    title: 'Vinduesmontage i nyt lejlighedskompleks i Fredericia',
+    category: 'Vinduer',
+    location: 'Fredericia',
+    year: 2025,
+    summary: 'Montering af 147 vindueselementer i et nyt lejlighedskompleks i Fredericia.',
+    description:
+      'Et større projekt, hvor vi har stået for vinduesmontagen i et nyt lejlighedskompleks i Fredericia. I alt har vi monteret 147 vindueselementer, og projektet er nu godt på vej mod næste fase.',
+    scope: ['Montage af 147 vindueselementer', 'Præcis opmåling og tilpasning', 'Tætning og isolering'],
+    duration: 'Igangværende',
+    tone: 'window',
+    gallery: 0,
+    image: '/images/case-fredericia-vinduer-1.jpg',
+    galleryImages: ['/images/case-fredericia-vinduer-2.jpg', '/images/case-fredericia-vinduer-3.jpg'],
+    highlight: '147 vindueselementer',
+  },
+  {
     slug: 'carport-give',
     title: 'Dobbeltcarport med redskabsrum',
     category: 'Carport',
