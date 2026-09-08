@@ -122,6 +122,22 @@ export const cases: ProjectCase[] = [
     highlight: 'Totalentreprise',
   },
   {
+    slug: 'fuldlimet-egetraesgulv-bredsten',
+    title: 'Fuldlimet egetræsgulv',
+    category: 'Renovering',
+    location: 'Bredsten',
+    year: 2025,
+    summary: 'Eksklusivt fuldlimet egetræsgulv med massiv, dæmpet akustik – limet direkte til undergulvet.',
+    description:
+      'Et fuldlimet egetræsgulv er en eksklusiv og utrolig stabil gulvløsning, hvor gulvbrædderne – enten massive planker eller lamelplank – limes direkte fast til undergulvet. Det fjerner den "hule" lyd, man kender fra svømmende gulve, og giver i stedet en massiv, dæmpet akustik.',
+    scope: ['Fuldlimet montering', 'Egetræsplanker', 'Limet direkte til undergulv', 'Massiv, dæmpet akustik'],
+    duration: '1 uge',
+    tone: 'renovation',
+    gallery: 0,
+    image: '/images/case-traegulv-bredsten-1.jpg',
+    galleryImages: ['/images/case-traegulv-bredsten-2.jpg', '/images/case-traegulv-bredsten-3.jpg'],
+  },
+  {
     slug: 'koekken-vejle',
     title: 'Nyt køkken og alrum',
     category: 'Renovering',
