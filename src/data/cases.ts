@@ -26,6 +26,8 @@ export type ProjectCase = {
   /** Rigtige før/efter-billeder til den interaktive slider – bruges i stedet for SVG-placeholders, når begge er sat */
   beforeImage?: string;
   afterImage?: string;
+  /** Skjul projektet i det begrænsede udvalg på forsiden ("Se hvad vi har bygget") – vises stadig under Projekter */
+  hideFromHome?: boolean;
 };
 
 // Projekter med rigtige billeder er listet først, så forsidens udvalg og toppen af
@@ -57,6 +59,28 @@ export const cases: ProjectCase[] = [
       '/images/case-sommerhus-vesterhavet-9.jpg',
     ],
     highlight: 'Ved Vesterhavet',
+  },
+  {
+    slug: 'hems-sommerhus-vesterhavet',
+    title: 'Hems i sommerhus ved Vesterhavet',
+    category: 'Tilbygning',
+    location: 'Vesterhavet',
+    year: 2025,
+    summary: 'Ny hems i sommerhus ved Vesterhavet – mere plads i loftsrummet med et markant ovalt vindue og udsigt til klitterne.',
+    description:
+      'Sommerhuset manglede plads, og løsningen blev en ny hems i tagrummet. Vi blev tilkaldt i forbindelse med, at sommerhuset samtidig fik nyt stråtag – selve stråtaget er udført af andre håndværkere, mens vores opgave udelukkende var at tegne og bygge hemsen. Det skæve tagrum stillede særlige krav til konstruktionen, og resultatet er en organisk formet niche med et stort, ovalt vindue, der trækker lys og udsigt til klitterne og det åbne landskab helt ind i rummet. Med nyt gulv og en gennemført finish fremstår hemsen i dag som et hyggeligt ekstra rum, hvor familien kan samles – uden at man har rørt ved husets ydre.',
+    scope: ['Ny hems i tagrum', 'Ovalt vinduesniche med udsigt', 'Nyt gulv i hemsrum', 'Udført sideløbende med sommerhusets nye stråtag (udført af andre)'],
+    duration: '3 uger',
+    tone: 'extension',
+    gallery: 0,
+    image: '/images/case-hems-sommerhus-1.jpg',
+    galleryImages: [
+      '/images/case-hems-sommerhus-4.jpg',
+      '/images/case-hems-sommerhus-2.jpg',
+      '/images/case-hems-sommerhus-3.jpg',
+    ],
+    highlight: 'Ved Vesterhavet',
+    hideFromHome: true,
   },
   {
     slug: 'nyt-tag-betontagsten-vejle',

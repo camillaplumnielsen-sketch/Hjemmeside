@@ -12,7 +12,8 @@ export function CaseGrid({ limit }: { limit?: number }) {
 
   const filtered = useMemo(() => {
     const list = filter === 'Alle' ? allCases : allCases.filter((c) => c.category === filter);
-    return limit ? list.slice(0, limit) : list;
+    if (!limit) return list;
+    return list.filter((c) => !c.hideFromHome).slice(0, limit);
   }, [filter, limit]);
 
   const filters: Filter[] = ['Alle', ...caseCategories];
