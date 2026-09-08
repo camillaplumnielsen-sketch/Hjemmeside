@@ -80,6 +80,23 @@ export const cases: ProjectCase[] = [
     highlight: 'Bevaret original stil',
   },
   {
+    slug: 'renovering-knabberup',
+    title: 'Omfattende renovering af Knabberup Mølle',
+    category: 'Renovering',
+    location: 'Knabberup',
+    year: 2025,
+    summary: 'Ny kvist, ændret rumindeling og tilbygning i begge plan på et smukt bindingsværkshus.',
+    description:
+      'Knabberup Mølle gennemgår en omfattende renovering, hvor der blandt andet etableres en ny kvist, rumindelingen ændres, og der bygges til i begge plan. Målet er at skabe en mere funktionel bolig med gode løsninger, der passer til familiens behov.',
+    scope: ['Ny kvist', 'Ændret rumindeling', 'Tilbygning i begge plan', 'Nye vinduer'],
+    duration: 'Igangværende',
+    tone: 'renovation',
+    gallery: 0,
+    beforeImage: '/images/case-knabberup-foer.jpg',
+    afterImage: '/images/case-knabberup-efter.jpg',
+    galleryImages: ['/images/case-knabberup-2.jpg', '/images/case-knabberup-vindue-1.jpg', '/images/case-knabberup-vindue-2.jpg'],
+  },
+  {
     slug: 'totalrenovering-bredsten',
     title: 'Totalrenovering af parcelhus',
     category: 'Renovering',
