@@ -18,8 +18,17 @@ export default function KontaktPage() {
   return (
     <>
       <SetHeaderTheme theme="light" />
-      <section className="bg-forest-950 pt-[110px] text-cream-50">
-        <div className="container-max py-14">
+      <section className="relative overflow-hidden bg-forest-950 pt-[110px] text-cream-50">
+        <div className="absolute inset-0 opacity-40">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/kontakt-hero-firmabil.jpg"
+            alt="Tømrerfirmaet Brdr. Larsens firmabil på en byggeplads"
+            className="h-full w-full object-cover"
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-forest-950 to-forest-950/50" />
+        <div className="container-max relative z-10 py-14">
           <Breadcrumbs items={[{ name: 'Forside', path: '/' }, { name: 'Kontakt', path: '/kontakt' }]} />
           <h1 className="mt-8 max-w-3xl font-display text-display-lg font-semibold text-balance">
             Få et uforpligtende tilbud
