@@ -26,6 +26,8 @@ export type ProjectCase = {
   /** Rigtige før/efter-billeder til den interaktive slider – bruges i stedet for SVG-placeholders, når begge er sat */
   beforeImage?: string;
   afterImage?: string;
+  /** Skjul projektet i det begrænsede udvalg på forsiden ("Se hvad vi har bygget") – vises stadig under Projekter */
+  hideFromHome?: boolean;
 };
 
 // Projekter med rigtige billeder er listet først, så forsidens udvalg og toppen af
@@ -78,6 +80,7 @@ export const cases: ProjectCase[] = [
       '/images/case-hems-sommerhus-3.jpg',
     ],
     highlight: 'Ved Vesterhavet',
+    hideFromHome: true,
   },
   {
     slug: 'nyt-tag-betontagsten-vejle',
