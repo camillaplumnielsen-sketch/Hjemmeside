@@ -81,13 +81,13 @@ export const cases: ProjectCase[] = [
   },
   {
     slug: 'renovering-knabberup',
-    title: 'Omfattende renovering på Knabberup',
+    title: 'Omfattende renovering af Knabberup Mølle',
     category: 'Renovering',
     location: 'Knabberup',
     year: 2025,
     summary: 'Ny kvist, ændret rumindeling og tilbygning i begge plan på et smukt bindingsværkshus.',
     description:
-      'Boligen på Knabberup gennemgår en omfattende renovering, hvor der blandt andet etableres en ny kvist, rumindelingen ændres, og der bygges til i begge plan. Målet er at skabe en mere funktionel bolig med gode løsninger, der passer til familiens behov.',
+      'Knabberup Mølle gennemgår en omfattende renovering, hvor der blandt andet etableres en ny kvist, rumindelingen ændres, og der bygges til i begge plan. Målet er at skabe en mere funktionel bolig med gode løsninger, der passer til familiens behov.',
     scope: ['Ny kvist', 'Ændret rumindeling', 'Tilbygning i begge plan', 'Nye vinduer'],
     duration: 'Igangværende',
     tone: 'renovation',
