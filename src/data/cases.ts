@@ -94,7 +94,17 @@ export const cases: ProjectCase[] = [
     gallery: 0,
     beforeImage: '/images/case-knabberup-foer.jpg',
     afterImage: '/images/case-knabberup-efter.jpg',
-    galleryImages: ['/images/case-knabberup-2.jpg', '/images/case-knabberup-vindue-1.jpg', '/images/case-knabberup-vindue-2.jpg'],
+    galleryImages: [
+      '/images/case-knabberup-2.jpg',
+      '/images/case-knabberup-have.jpg',
+      '/images/case-knabberup-kvist-indvendig.jpg',
+      '/images/case-knabberup-haandvaerk.jpg',
+      '/images/case-knabberup-hall.jpg',
+      '/images/case-knabberup-doer.jpg',
+      '/images/case-knabberup-gulv.jpg',
+      '/images/case-knabberup-vindue-1.jpg',
+      '/images/case-knabberup-vindue-2.jpg',
+    ],
   },
   {
     slug: 'totalrenovering-bredsten',
