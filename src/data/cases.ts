@@ -38,10 +38,10 @@ export const cases: ProjectCase[] = [
     category: 'Special',
     location: 'Vesterhavet',
     year: 2025,
-    summary: 'Arkitekttegnet sommerhus i thermowood med kobbertagrender, listetækning og kulbrændt Petersen-tegl.',
+    summary: 'Arkitekttegnet sommerhus i thermowood med tag i listetækning, facade og skorsten i kulbrændt Petersen-tegl.',
     description:
-      'Tæt på klitterne ved Vesterhavet har vi opført dette sommerhus, hvor hvert materialevalg er tænkt ind i det barske kystklima. Facaden er beklædt med thermowood og opført som listetækning, der giver husets ydre en rolig, taktil rytme og en overflade, der ældes smukt i det salte, vestjyske vejr. Den markante geometriske form med de høje glaspartier trækker lys og udsigt langt ind i rummene, mens kobbertagrender og en skorsten i kulbrændt Petersen-tegl tilfører husets detaljer patina og karakter, der kun bliver smukkere med årene. Resultatet er et sommerhus, der er robust nok til vestkystens vind og vejr – og et sted, man med det samme kan mærke er bygget med hånd og øje for detaljen.',
-    scope: ['Facade i thermowood', 'Listetækning', 'Kobbertagrender', 'Skorsten i kulbrændt Petersen-tegl'],
+      'Tæt på klitterne ved Vesterhavet har vi opført dette sommerhus, hvor hvert materialevalg er tænkt ind i det barske kystklima. Facaden er beklædt med thermowood, der giver husets ydre en rolig, taktil rytme og en overflade, der ældes smukt i det salte, vestjyske vejr. Taget er udført som listetækning, mens hele den ene facade og skorstenen er opført i kulbrændt Petersen-tegl, der tilfører huset patina og karakter, der kun bliver smukkere med årene. Den markante geometriske form med de høje glaspartier trækker lys og udsigt langt ind i rummene, og kobbertagrender fuldender detaljerne. Resultatet er et sommerhus, der er robust nok til vestkystens vind og vejr – og et sted, man med det samme kan mærke er bygget med hånd og øje for detaljen.',
+    scope: ['Facade i thermowood', 'Tag udført som listetækning', 'Facade og skorsten i kulbrændt Petersen-tegl', 'Kobbertagrender'],
     duration: '14 uger',
     tone: 'special',
     gallery: 0,
