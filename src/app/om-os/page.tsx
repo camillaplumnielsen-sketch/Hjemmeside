@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { SectionHeading } from '@/components/SectionHeading';
 import { Reveal } from '@/components/Reveal';
-import { SceneImage } from '@/components/SceneImage';
 import { CTASection } from '@/components/CTASection';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { SetHeaderTheme } from '@/components/HeaderTheme';
@@ -28,8 +27,13 @@ export default function OmOsPage() {
     <>
       <SetHeaderTheme theme="light" />
       <section className="relative overflow-hidden bg-forest-950 pt-[110px] text-cream-50">
-        <div className="absolute inset-0 opacity-30">
-          <SceneImage tone="hero" variant="neutral" className="h-full w-full object-cover" rounded={false} />
+        <div className="absolute inset-0 opacity-40">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/om-os-hero-haandvaerk.jpg"
+            alt="Håndlavet tømrersamling – godt håndværk og gamle traditioner"
+            className="h-full w-full object-cover"
+          />
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-forest-950 to-forest-950/50" />
         <div className="container-max relative z-10 py-16">
