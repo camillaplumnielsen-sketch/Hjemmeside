@@ -105,7 +105,7 @@ export function Footer() {
           <p>
             © {year} {site.legalName}. Alle rettigheder forbeholdes.
           </p>
-          <p>CVR {site.cvr} · Tømrer i Vejle &amp; Bredsten</p>
+          <p>CVR {site.cvr} · Tømrer i Vejle &amp; Bredsten · Medlem af Dansk Industri</p>
         </div>
       </div>
     </footer>

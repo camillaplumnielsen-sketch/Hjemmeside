@@ -108,7 +108,47 @@ export default function OmOsPage() {
         </div>
       </section>
 
+      {/* Medlemskaber & certificeringer */}
+      <section className="bg-cream-100 py-section">
+        <div className="container-max">
+          <SectionHeading align="center" eyebrow="Medlemskaber & certificeringer" title="Kvalitet du kan stole på" />
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 max-w-3xl mx-auto">
+            <Reveal className="flex items-center gap-4 rounded-3xl border border-forest-100 bg-white p-6 shadow-soft">
+              <span className="flex h-12 w-12 flex-none items-center justify-center rounded-2xl bg-forest-700 text-cream-50">
+                <BadgeIcon />
+              </span>
+              <div>
+                <h3 className="font-display text-lg font-semibold text-forest-900">Medlem af Dansk Industri</h3>
+                <p className="mt-1 text-sm leading-relaxed text-forest-600">
+                  Tømrerfirmaet Brdr. Larsen ApS er medlem af Dansk Industri.
+                </p>
+              </div>
+            </Reveal>
+            <Reveal delay={0.06} className="flex items-center gap-4 rounded-3xl border border-forest-100 bg-white p-6 shadow-soft">
+              <span className="flex h-12 w-12 flex-none items-center justify-center rounded-2xl bg-forest-700 text-cream-50">
+                <BadgeIcon />
+              </span>
+              <div>
+                <h3 className="font-display text-lg font-semibold text-forest-900">Vinduesmester hos Velfac</h3>
+                <p className="mt-1 text-sm leading-relaxed text-forest-600">
+                  Certificeret Velfac Vinduesmester – din garanti for korrekt rådgivning og montering.
+                </p>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
       <CTASection />
     </>
+  );
+}
+
+function BadgeIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M12 15a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" />
+      <path d="m8.5 13.5-1.5 6 5-2 5 2-1.5-6" />
+    </svg>
   );
 }
