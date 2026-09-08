@@ -151,6 +151,22 @@ export const cases: ProjectCase[] = [
     highlight: '+40 m² boligareal',
   },
   {
+    slug: 'tilbygning-spisestue-vinrum-bredsten',
+    title: 'Ny tilbygning med spisestue og vinrum',
+    category: 'Tilbygning',
+    location: 'Bredsten',
+    year: 2025,
+    summary: 'Ny tilbygning med større spisestue og et stemningsfuldt vinrum, der skaber mere plads og bedre sammenhæng i boligen.',
+    description:
+      'Ny tilbygning, som har skabt mere plads og bedre sammenhæng i boligen. Kundens ønske var en større spisestue og et stemningsfuldt vinrum. Resultatet er en tilbygning, der passer naturligt til villaens arkitektur og samtidig opfylder familiens behov for mere funktionel plads.',
+    scope: ['Ny spisestue', 'Stemningsfuldt vinrum', 'Store glaspartier', 'Facade i matchende materialer'],
+    duration: '10 uger',
+    tone: 'extension',
+    gallery: 0,
+    image: '/images/case-tilbygning-bredsten-1.jpg',
+    galleryImages: ['/images/case-tilbygning-bredsten-2.jpg', '/images/case-tilbygning-bredsten-3.jpg'],
+  },
+  {
     slug: 'udestue-bredsten',
     title: 'Udestue med udsigt',
     category: 'Tilbygning',
