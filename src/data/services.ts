@@ -176,9 +176,10 @@ export const services: Service[] = [
     metaDescription:
       'Nye vinduer og døre i Vejle og Bredsten. Brdr. Larsen leverer og monterer energivinduer og døre, der sænker varmeregningen. Få et uforpligtende tilbud.',
     intro:
-      'Nye vinduer og døre giver mere dagslys, bedre komfort og et markant lavere varmeforbrug. Vi rådgiver om materiale og energiklasse og sikrer en tæt, professionel montering hele vejen rundt.',
+      'Nye vinduer og døre giver mere dagslys, bedre komfort og et markant lavere varmeforbrug. Vi er Vinduesmester hos Velfac og rådgiver om materiale og energiklasse og sikrer en tæt, professionel montering hele vejen rundt.',
     icon: 'window',
     benefits: [
+      { title: 'Vinduesmester hos Velfac', description: 'Tømrerfirmaet Brdr. Larsen er certificeret Vinduesmester ved Velfac – din garanti for korrekt rådgivning og montering.' },
       { title: 'Energivinduer', description: 'Moderne ruder sænker varmeregningen og fjerner kuldenedfald og træk.' },
       { title: 'Tæt montering', description: 'Korrekt fugning og efterisolering sikrer et tæt og holdbart resultat.' },
       { title: 'Træ, træ/alu eller plast', description: 'Vi hjælper dig med at vælge den rigtige løsning til stil og budget.' },
