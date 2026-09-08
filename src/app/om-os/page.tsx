@@ -95,6 +95,27 @@ export default function OmOsPage() {
         </div>
       </section>
 
+      {/* Detalje */}
+      <section className="container-max pb-section">
+        <Reveal className="mx-auto flex max-w-2xl flex-col overflow-hidden rounded-4xl border border-forest-100 bg-white shadow-lift sm:flex-row">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/om-os-hestesko.jpg"
+            alt="Hestesko støbt ned i gulvet for lykke"
+            className="aspect-square w-full object-cover sm:w-2/5"
+          />
+          <div className="flex flex-1 flex-col justify-center p-8">
+            <p className="font-display text-xl font-semibold italic text-forest-900">
+              »Ikke alle detaljer står på tegningen.«
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-forest-600">
+              En hestesko støbt ned i gulvet – en gammel håndværkertradition for lykke, som vi gerne giver videre på
+              vores projekter.
+            </p>
+          </div>
+        </Reveal>
+      </section>
+
       {/* Værdier */}
       <section className="container-max py-section">
         <SectionHeading align="center" eyebrow="Værdier" title="Det, vi står for" />
