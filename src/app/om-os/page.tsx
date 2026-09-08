@@ -46,16 +46,26 @@ export default function OmOsPage() {
 
       {/* Introduktion */}
       <section className="container-max py-section">
-        <div className="max-w-3xl">
-          <SectionHeading
-            eyebrow="Hvem vi er"
-            title="Lokalt håndværk og langsigtede løsninger"
-            description="Brdr. Larsen er en familieejet virksomhed med rødder i det lokale område."
-          />
-          <p className="mt-6 prose-brand">
-            Vi har gennem årene opbygget erfaring inden for nybyggeri, renovering, tagarbejde, tilbygninger og
-            specialopgaver. Vores mål er altid at levere løsninger, vi selv kan være stolte af.
-          </p>
+        <div className="grid items-center gap-12 lg:grid-cols-2">
+          <Reveal className="overflow-hidden rounded-4xl border border-forest-100 shadow-lift lg:order-1">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/om-os-rejsegilde.jpg"
+              alt="Rejsegilde hos Tømrerfirmaet Brdr. Larsen – håndværker i tagkonstruktionen"
+              className="aspect-[4/5] w-full object-cover"
+            />
+          </Reveal>
+          <div className="lg:order-2">
+            <SectionHeading
+              eyebrow="Hvem vi er"
+              title="Lokalt håndværk og langsigtede løsninger"
+              description="Brdr. Larsen er en familieejet virksomhed med rødder i det lokale område."
+            />
+            <p className="mt-6 prose-brand">
+              Vi har gennem årene opbygget erfaring inden for nybyggeri, renovering, tagarbejde, tilbygninger og
+              specialopgaver. Vores mål er altid at levere løsninger, vi selv kan være stolte af.
+            </p>
+          </div>
         </div>
       </section>
 
