@@ -83,7 +83,7 @@ export const services: Service[] = [
           'Ofte ja. I forbindelse med tagudskiftning kan vi efterisolere, hvilket giver et lavere energiforbrug og et bedre indeklima.',
       },
     ],
-    relatedCases: ['tagudskiftning-jelling', 'tagrenovering-vejle-villa'],
+    relatedCases: ['nyt-tag-betontagsten-vejle', 'tagudskiftning-jelling'],
     keywords: ['nyt tag Vejle', 'tagarbejde Vejle', 'tagudskiftning Bredsten', 'tegltag Vejle'],
   },
   {
@@ -124,7 +124,7 @@ export const services: Service[] = [
           'Det afhænger helt af omfanget. Mindre renoveringer starter fra ca. 75.000 kr., mens gennemgribende ombygninger kan koste 500.000+ kr. Vi giver altid et fast tilbud.',
       },
     ],
-    relatedCases: ['totalrenovering-bredsten', 'koekken-vejle'],
+    relatedCases: ['renovering-knabberup', 'fuldlimet-egetraesgulv-bredsten'],
     keywords: ['renovering Vejle', 'boligrenovering Bredsten', 'ombygning Vejle'],
   },
   {
@@ -206,7 +206,7 @@ export const services: Service[] = [
         answer: 'Ja. Vi arbejder hele året og udskifter ét vindue ad gangen, så huset holdes lunt undervejs.',
       },
     ],
-    relatedCases: ['vinduer-vejle-parcelhus'],
+    relatedCases: ['vinduesudskiftning-torvehallerne-vejle', 'vindueselementer-lejlighedskompleks-fredericia'],
     keywords: ['vinduer Vejle', 'døre Vejle', 'vinduesudskiftning Bredsten', 'energivinduer Vejle'],
   },
   {
@@ -279,7 +279,7 @@ export const services: Service[] = [
         answer: 'Ja. Vi er vant til at udvikle løsningen sammen med kunden fra en indledende idé til færdigt håndværk.',
       },
     ],
-    relatedCases: ['specialtrappe-vejle'],
+    relatedCases: ['sommerhus-vesterhavet', 'traebro-vejle-aa'],
     keywords: ['snedker Vejle', 'specialopgaver tømrer Vejle', 'indbygget inventar Vejle'],
   },
 ];
