@@ -120,6 +120,27 @@ export default function OmOsPage() {
         </Reveal>
       </section>
 
+      {/* Detalje: den lille hjælper */}
+      <section className="container-max pb-section">
+        <Reveal className="mx-auto flex max-w-2xl flex-col-reverse overflow-hidden rounded-4xl border border-forest-100 bg-white shadow-lift sm:flex-row">
+          <div className="flex flex-1 flex-col justify-center p-8">
+            <p className="font-display text-xl font-semibold italic text-forest-900">
+              »Nogle håndværkere starter allerede som børn.«
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-forest-600">
+              Vores mindste hjælper er tit med på pladsen, når der skal bygges – med egen skruenøgle og godt humør.
+              Måske en kommende tømrer i familien?
+            </p>
+          </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/illustration-lille-hjaelper.svg"
+            alt="Illustration af en lille hjælper, der sidder på en trærem på byggepladsen"
+            className="aspect-square w-full object-cover sm:w-2/5"
+          />
+        </Reveal>
+      </section>
+
       {/* Værdier */}
       <section className="container-max py-section">
         <SectionHeading align="center" eyebrow="Værdier" title="Det, vi står for" />

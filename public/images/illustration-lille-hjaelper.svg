@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Illustration af en lille hjælper på byggepladsen">
+  <defs>
+    <linearGradient id="hjaelper-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dce9e0" />
+      <stop offset="100%" stop-color="#f6f2e8" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#hjaelper-sky)" />
+
+  <!-- Fyrretræer i baggrunden -->
+  <g fill="#1f4331" opacity="0.55">
+    <path d="M70 300 L100 220 L130 300 Z" />
+    <path d="M95 320 L130 210 L165 320 Z" />
+    <path d="M40 330 L70 250 L100 330 Z" />
+    <path d="M460 300 L495 205 L530 300 Z" />
+    <path d="M500 320 L535 230 L570 320 Z" />
+  </g>
+  <g fill="#2d5a43" opacity="0.5">
+    <path d="M60 335 L100 245 L140 335 Z" />
+    <path d="M470 335 L515 235 L555 335 Z" />
+  </g>
+
+  <!-- Sandet klitjord -->
+  <path d="M0 340 Q150 315 300 335 T600 330 V600 H0 Z" fill="#e4d9c3" />
+  <path d="M0 360 Q150 340 320 358 T600 350 V600 H0 Z" fill="#d8c9a9" opacity="0.7" />
+
+  <!-- Diagonal tagspær -->
+  <rect x="330" y="60" width="34" height="330" rx="4" fill="#c9a15f" transform="rotate(24 347 225)" />
+  <rect x="330" y="60" width="34" height="330" rx="4" fill="none" stroke="#a97f3f" stroke-width="2" opacity="0.4" transform="rotate(24 347 225)" />
+
+  <!-- Betonfundament -->
+  <rect x="40" y="430" width="520" height="60" fill="#b9bab0" />
+  <rect x="40" y="430" width="520" height="10" fill="#a5a69c" />
+
+  <!-- Trærem ovenpå fundament -->
+  <rect x="30" y="392" width="540" height="46" rx="3" fill="#e8d3a1" />
+  <rect x="30" y="392" width="540" height="46" rx="3" fill="none" stroke="#c9a86b" stroke-width="2" />
+  <line x1="60" y1="400" x2="60" y2="430" stroke="#c9a86b" stroke-width="1.5" opacity="0.6" />
+  <line x1="500" y1="400" x2="500" y2="430" stroke="#c9a86b" stroke-width="1.5" opacity="0.6" />
+
+  <!-- Vinkelbeslag på remmen -->
+  <g fill="none" stroke="#8b8f89" stroke-width="4">
+    <path d="M70 392 v-20 h20" />
+    <path d="M110 392 v-20 h20" />
+    <path d="M150 392 v-20 h20" />
+  </g>
+  <rect x="185" y="382" width="34" height="24" rx="2" fill="#2f4a63" opacity="0.85" />
+  <rect x="185" y="382" width="34" height="10" rx="2" fill="#3f5f7d" />
+
+  <!-- Skruenøgle -->
+  <path d="M235 400 l30 -14" stroke="#6b6f68" stroke-width="6" stroke-linecap="round" fill="none" />
+  <circle cx="233" cy="401" r="7" fill="none" stroke="#6b6f68" stroke-width="5" />
+
+  <!-- Drengen: siddende på remmen -->
+  <g>
+    <!-- Ben, krydsede -->
+    <path d="M300 400 Q330 425 380 415 Q400 412 415 398" fill="none" stroke="#1c1c1e" stroke-width="26" stroke-linecap="round" />
+    <path d="M310 405 Q345 430 390 400" fill="none" stroke="#141416" stroke-width="10" stroke-linecap="round" opacity="0.35" />
+
+    <!-- Sko -->
+    <ellipse cx="405" cy="398" rx="17" ry="10" fill="#2f5a3e" />
+    <ellipse cx="316" cy="411" rx="15" ry="9" fill="#2f5a3e" />
+
+    <!-- Krop / trøje -->
+    <path d="M300 335 Q296 385 320 405 L400 405 Q414 375 402 335 Q352 315 300 335 Z" fill="#1e2a44" />
+    <circle cx="345" cy="355" r="9" fill="#5a7ea8" opacity="0.8" />
+
+    <!-- Ærme + hånd ved skruenøglen -->
+    <path d="M300 345 Q270 365 250 395" fill="none" stroke="#1e2a44" stroke-width="20" stroke-linecap="round" />
+    <circle cx="245" cy="400" r="10" fill="#e8bd93" />
+
+    <!-- Andet ærme -->
+    <path d="M395 340 Q415 360 408 388" fill="none" stroke="#1e2a44" stroke-width="20" stroke-linecap="round" />
+    <circle cx="404" cy="392" r="10" fill="#e8bd93" />
+
+    <!-- Hoved -->
+    <circle cx="345" cy="305" r="30" fill="#f0c9a0" />
+    <path d="M317 298 Q322 270 345 268 Q372 268 375 296 Q360 285 345 288 Q328 288 317 298 Z" fill="#c98b4a" />
+
+    <!-- Ansigt (meget enkelt, ikke-genkendeligt) -->
+    <circle cx="335" cy="308" r="2.6" fill="#3a2a1e" />
+    <circle cx="356" cy="308" r="2.6" fill="#3a2a1e" />
+    <path d="M336 320 Q345 325 354 320" fill="none" stroke="#3a2a1e" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Skruekasse -->
+  <rect x="150" y="378" width="36" height="22" rx="2" fill="#7a5a35" opacity="0.9" />
+  <rect x="150" y="378" width="36" height="7" rx="2" fill="#8f6c42" />
+</svg>
