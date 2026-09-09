@@ -35,7 +35,7 @@ export const site = {
 export const navigation = [
   { label: 'Forside', href: '/' },
   { label: 'Om os', href: '/om-os' },
-  { label: 'Ydelser', href: '/ydelser' },
+  { label: 'Vi tilbyder', href: '/ydelser' },
   { label: 'Projekter', href: '/cases' },
   { label: 'Boligudlejning', href: '/boligudlejning' },
   { label: 'Anmeldelser', href: '/kundeanmeldelser' },
