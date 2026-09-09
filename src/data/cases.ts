@@ -47,9 +47,9 @@ export const cases: ProjectCase[] = [
     duration: 'Igangværende',
     tone: 'renovation',
     gallery: 0,
-    beforeImage: '/images/case-knabberup-foer.jpg',
-    afterImage: '/images/case-knabberup-efter.jpg',
+    image: '/images/case-knabberup-efter.jpg',
     galleryImages: [
+      '/images/case-knabberup-foer.jpg',
       '/images/case-knabberup-2.jpg',
       '/images/case-knabberup-have.jpg',
       '/images/case-knabberup-kvist-indvendig.jpg',
