@@ -46,7 +46,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
   const relatedCases = service.relatedCases.map(getCase).filter(Boolean);
   const breadcrumbs = [
     { name: 'Forside', path: '/' },
-    { name: 'Ydelser', path: '/ydelser' },
+    { name: 'Vi tilbyder', path: '/ydelser' },
     { name: service.title, path: `/ydelser/${service.slug}` },
   ];
 

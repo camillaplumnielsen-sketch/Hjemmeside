@@ -7,7 +7,7 @@ import { SetHeaderTheme } from '@/components/HeaderTheme';
 import { buildMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Ydelser – Tømrer i Vejle',
+  title: 'Vi tilbyder – Tømrer i Vejle',
   description:
     'Se alle ydelser hos Brdr. Larsen: nyt tag, renovering, tilbygninger, vinduer og døre, carporte og specialløsninger i Vejle, Bredsten og omegn.',
   path: '/ydelser',
@@ -20,10 +20,10 @@ export default function YdelserPage() {
       <SetHeaderTheme theme="dark" />
       <section className="bg-cream-100 pt-[110px]">
         <div className="container-max py-14">
-          <Breadcrumbs items={[{ name: 'Forside', path: '/' }, { name: 'Ydelser', path: '/ydelser' }]} />
+          <Breadcrumbs items={[{ name: 'Forside', path: '/' }, { name: 'Vi tilbyder', path: '/ydelser' }]} />
           <div className="mt-8">
             <SectionHeading
-              eyebrow="Ydelser"
+              eyebrow="Vi tilbyder"
               title="Tømrerarbejde i høj kvalitet – hele vejen rundt"
               description="Uanset opgavens størrelse løser vi den med samme grundighed. Vælg en ydelse og læs mere om proces, fordele og priser."
             />

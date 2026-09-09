@@ -44,7 +44,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="text-sm font-semibold uppercase tracking-wider text-cream-100">Ydelser</h3>
+          <h3 className="text-sm font-semibold uppercase tracking-wider text-cream-100">Vi tilbyder</h3>
           <ul className="mt-5 space-y-3 text-sm">
             {services.map((s) => (
               <li key={s.slug}>
