@@ -38,7 +38,6 @@ export const navigation = [
   { label: 'Vi tilbyder', href: '/ydelser' },
   { label: 'Projekter', href: '/cases' },
   { label: 'Boligudlejning', href: '/boligudlejning' },
-  { label: 'Anmeldelser', href: '/kundeanmeldelser' },
   { label: 'Kontakt', href: '/kontakt' },
 ] as const;
 
