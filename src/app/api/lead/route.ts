@@ -99,13 +99,20 @@ export async function POST(request: Request) {
     try {
       const resend = new Resend(apiKey);
       const fromAddress = process.env.RESEND_FROM_EMAIL ?? 'Tømrerfirmaet Brdr. Larsen <onboarding@resend.dev>';
-      await resend.emails.send({
+      const result = await resend.emails.send({
         from: fromAddress,
         to: site.email,
         replyTo: isValidEmail(lead.email) ? lead.email : undefined,
         subject: `Ny henvendelse fra hjemmesiden${lead.name ? ` – ${lead.name}` : ''}`,
         html: buildEmailHtml(lead),
       });
+      // Resends SDK kaster ikke en exception ved API-fejl (fx sandbox-begrænsninger) –
+      // fejlen kommer i stedet tilbage i result.error, så den skal tjekkes eksplicit.
+      if (result.error) {
+        console.error('[lead] Resend afviste e-mailen:', result.error);
+      } else {
+        console.info('[lead] e-mail sendt via Resend, id:', result.data?.id);
+      }
     } catch (err) {
       // Leadet er allerede logget ovenfor, så det går ikke tabt – men mailen kunne ikke sendes.
       console.error('[lead] kunne ikke sende e-mail via Resend:', err);
