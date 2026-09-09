@@ -164,7 +164,7 @@ export const services: Service[] = [
         answer: 'Ja. Vi matcher materialer, tag og facade, så tilbygningen falder naturligt i med det eksisterende hus.',
       },
     ],
-    relatedCases: ['tilbygning-vejle-familiebolig', 'udestue-bredsten'],
+    relatedCases: ['tilbygning-spisestue-vinrum-bredsten', 'hems-sommerhus-vesterhavet'],
     keywords: ['tilbygning Vejle', 'udestue Vejle', 'tilbygning Bredsten'],
   },
   {
