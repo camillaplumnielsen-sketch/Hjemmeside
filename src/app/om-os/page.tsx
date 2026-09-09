@@ -4,6 +4,7 @@ import { Reveal } from '@/components/Reveal';
 import { CTASection } from '@/components/CTASection';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { SetHeaderTheme } from '@/components/HeaderTheme';
+import { DIBadge } from '@/components/DIBadge';
 import { buildMetadata } from '@/lib/seo';
 import { site } from '@/lib/site';
 
@@ -139,9 +140,7 @@ export default function OmOsPage() {
           <SectionHeading align="center" eyebrow="Medlemskaber & certificeringer" title="Kvalitet du kan stole på" />
           <div className="mt-12 grid gap-5 sm:grid-cols-2 max-w-3xl mx-auto">
             <Reveal className="flex items-center gap-4 rounded-3xl border border-forest-100 bg-white p-6 shadow-soft">
-              <span className="flex h-12 w-12 flex-none items-center justify-center rounded-2xl bg-forest-700 text-cream-50">
-                <BadgeIcon />
-              </span>
+              <DIBadge />
               <div>
                 <h3 className="font-display text-lg font-semibold text-forest-900">Medlem af Dansk Industri</h3>
                 <p className="mt-1 text-sm leading-relaxed text-forest-600">
