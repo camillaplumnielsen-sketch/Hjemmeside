@@ -83,7 +83,7 @@ export const services: Service[] = [
           'Ofte ja. I forbindelse med tagudskiftning kan vi efterisolere, hvilket giver et lavere energiforbrug og et bedre indeklima.',
       },
     ],
-    relatedCases: ['nyt-tag-betontagsten-vejle', 'tagudskiftning-jelling'],
+    relatedCases: ['nyt-tag-betontagsten-vejle'],
     keywords: ['nyt tag Vejle', 'tagarbejde Vejle', 'tagudskiftning Bredsten', 'tegltag Vejle'],
   },
   {
