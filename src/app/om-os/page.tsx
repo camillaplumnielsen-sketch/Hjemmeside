@@ -153,7 +153,7 @@ export default function OmOsPage() {
               <img
                 src="/images/logo-velfac-vinduesmester-badge.png"
                 alt="Certificeret Velfac VinduesMester"
-                className="h-16 w-16 flex-none"
+                className="h-28 w-28 flex-none"
               />
               <div>
                 <h3 className="font-display text-lg font-semibold text-forest-900">Vinduesmester hos Velfac</h3>
