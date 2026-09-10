@@ -51,6 +51,69 @@ export default function BoligudlejningPage() {
         </div>
       </section>
 
+      {/* Nomineret til Borgernes Arkitekturpris */}
+      <section className="container-max py-section">
+        <Reveal className="overflow-hidden rounded-4xl border border-forest-100 bg-white shadow-lift lg:grid lg:grid-cols-2 lg:items-stretch">
+          <div className="p-8 sm:p-10 lg:p-12">
+            <span className="eyebrow text-wood-500">Borgernes Arkitekturpris</span>
+            <h2 className="mt-4 font-display text-display-md font-semibold text-forest-900 text-balance">
+              Vi er nomineret!
+            </h2>
+            <p className="mt-5 text-pretty text-forest-600">
+              Vores lejeboliger på Kirsten Madsens Vej i Ågård er nomineret til Borgernes Arkitekturpris i Vejle
+              Kommune. Projektet er noget helt særligt for os – vi købte grunden, efter den 150 år gamle mølle blev
+              revet ned, og har været med hele vejen fra de første idéer til det færdige byggeri.
+            </p>
+            <p className="mt-4 text-pretty text-forest-600">
+              Lokalplanen er udarbejdet i tæt samarbejde med vores arkitekt Hellum Architects og Vejle Kommune, og
+              vi har lagt stor vægt på at skabe energirigtige, flotte og funktionelle boliger – boliger, vi selv
+              ville have lyst til at bo i.
+            </p>
+            <a
+              href="https://www.vejle.dk/da/oplevelser/det-sker/prisuddelinger/vejle-prisen-og-borgernes-arkitekturpris/aarets-afstemning-til-borgernes-arkitekturpris/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-accent mt-8 inline-flex"
+            >
+              Stem på os – nr. 2, Rækkehusbebyggelse i Ågård
+            </a>
+          </div>
+          <div className="grid grid-cols-2 gap-0.5 bg-forest-100">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/project-kirsten-madsens-vej-2.jpg"
+              alt="Luftfoto af rækkehusbebyggelsen på Kirsten Madsens Vej, Ågård"
+              className="h-full w-full object-cover"
+            />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/project-kirsten-madsens-vej-3.jpg"
+              alt="Terrasse ved en af boligerne på Kirsten Madsens Vej, Ågård"
+              className="h-full w-full object-cover"
+            />
+          </div>
+        </Reveal>
+
+        <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {[
+            '/images/project-kirsten-madsens-vej-4.jpg',
+            '/images/project-kirsten-madsens-vej-5.jpg',
+            '/images/project-kirsten-madsens-vej-6.jpg',
+            '/images/project-kirsten-madsens-vej-7.jpg',
+            '/images/project-kirsten-madsens-vej-8.jpg',
+          ].map((src, i) => (
+            <Reveal key={src} delay={i * 0.05} className="overflow-hidden rounded-2xl border border-forest-100">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={src}
+                alt={`Kirsten Madsens Vej, Ågård – billede ${i + 4}`}
+                className="aspect-[4/3] w-full object-cover"
+              />
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
       <section className="container-max py-section">
         <SectionHeading eyebrow="Aktuelle lejemål" title="Her finder du vores ledige boliger" />
 
@@ -187,12 +250,17 @@ export default function BoligudlejningPage() {
                 delay={i * 0.06}
                 className="overflow-hidden rounded-3xl border border-forest-100 bg-white shadow-soft"
               >
-                <div className="aspect-[4/3] w-full">
+                <div className="relative aspect-[4/3] w-full">
                   {project.image ? (
                     // eslint-disable-next-line @next/next/no-img-element
                     <img src={project.image} alt={project.name} className="h-full w-full object-cover" />
                   ) : (
                     <SceneImage tone="renovation" variant="after" seed={i} className="h-full w-full object-cover" rounded={false} />
+                  )}
+                  {project.highlight && (
+                    <span className="absolute bottom-4 left-4 rounded-full bg-wood-500/95 px-3 py-1 text-xs font-semibold text-white shadow-soft">
+                      {project.highlight}
+                    </span>
                   )}
                 </div>
                 <div className="p-6">
