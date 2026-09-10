@@ -148,19 +148,19 @@ export default function OmOsPage() {
                 </p>
               </div>
             </Reveal>
-            <Reveal delay={0.06} className="flex items-center gap-4 rounded-3xl border border-forest-100 bg-white p-6 shadow-soft">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/images/logo-velfac-vinduesmester-badge.png"
-                alt="Certificeret Velfac VinduesMester"
-                className="h-28 w-28 flex-none"
-              />
+            <Reveal delay={0.06} className="flex items-center justify-between gap-4 rounded-3xl border border-forest-100 bg-white p-6 shadow-soft">
               <div>
                 <h3 className="font-display text-lg font-semibold text-forest-900">Vinduesmester hos Velfac</h3>
                 <p className="mt-1 text-sm leading-relaxed text-forest-600">
                   Certificeret Velfac Vinduesmester – din garanti for korrekt rådgivning og montering.
                 </p>
               </div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/logo-velfac-vinduesmester-badge.png"
+                alt="Certificeret Velfac VinduesMester"
+                className="h-28 w-28 flex-none"
+              />
             </Reveal>
           </div>
         </div>

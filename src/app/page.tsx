@@ -25,13 +25,7 @@ export default function HomePage() {
 
       {/* Velfac-certificering */}
       <section className="container-max pt-10">
-        <Reveal className="flex flex-col items-center gap-6 rounded-4xl border border-forest-100 bg-white p-6 shadow-soft sm:flex-row sm:p-8">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/images/logo-velfac-vinduesmester-badge.png"
-            alt="Certificeret Velfac VinduesMester"
-            className="h-32 w-32 flex-none"
-          />
+        <Reveal className="flex flex-col items-center gap-6 rounded-4xl border border-forest-100 bg-white p-6 shadow-soft sm:flex-row sm:justify-between sm:p-8">
           <div className="text-center sm:text-left">
             <h2 className="font-display text-xl font-semibold text-forest-900">Certificeret Velfac VinduesMester</h2>
             <p className="mt-2 max-w-xl text-forest-600">
@@ -39,6 +33,12 @@ export default function HomePage() {
               montering og kvalitetshåndværk, når det gælder vinduer og døre.
             </p>
           </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/logo-velfac-vinduesmester-badge.png"
+            alt="Certificeret Velfac VinduesMester"
+            className="h-32 w-32 flex-none"
+          />
         </Reveal>
       </section>
 
