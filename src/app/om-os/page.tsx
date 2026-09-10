@@ -149,9 +149,12 @@ export default function OmOsPage() {
               </div>
             </Reveal>
             <Reveal delay={0.06} className="flex items-center gap-4 rounded-3xl border border-forest-100 bg-white p-6 shadow-soft">
-              <span className="flex h-12 w-12 flex-none items-center justify-center rounded-2xl bg-forest-700 text-cream-50">
-                <BadgeIcon />
-              </span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/logo-velfac-vinduesmester-badge.png"
+                alt="Certificeret Velfac VinduesMester"
+                className="h-16 w-16 flex-none"
+              />
               <div>
                 <h3 className="font-display text-lg font-semibold text-forest-900">Vinduesmester hos Velfac</h3>
                 <p className="mt-1 text-sm leading-relaxed text-forest-600">
@@ -165,14 +168,5 @@ export default function OmOsPage() {
 
       <CTASection />
     </>
-  );
-}
-
-function BadgeIcon() {
-  return (
-    <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d="M12 15a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" />
-      <path d="m8.5 13.5-1.5 6 5-2 5 2-1.5-6" />
-    </svg>
   );
 }
