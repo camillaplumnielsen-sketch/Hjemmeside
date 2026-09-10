@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { CaseGrid } from '@/components/CaseGrid';
 import { SectionHeading } from '@/components/SectionHeading';
+import { SocialFollow } from '@/components/SocialFollow';
 import { CTASection } from '@/components/CTASection';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { SetHeaderTheme } from '@/components/HeaderTheme';
@@ -34,6 +35,8 @@ export default function CasesPage() {
       <section className="container-max py-section">
         <CaseGrid />
       </section>
+
+      <SocialFollow />
 
       <CTASection />
     </>
