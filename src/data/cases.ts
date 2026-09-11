@@ -91,7 +91,14 @@ export const cases: ProjectCase[] = [
     tone: 'window',
     gallery: 0,
     image: '/images/case-torvehallerne-efter.jpg',
-    galleryImages: ['/images/case-torvehallerne-foer.jpg'],
+    galleryImages: [
+      '/images/case-torvehallerne-2.jpg',
+      '/images/case-torvehallerne-3.jpg',
+      '/images/case-torvehallerne-4.jpg',
+      '/images/case-torvehallerne-5.jpg',
+      '/images/case-torvehallerne-6.jpg',
+      '/images/case-torvehallerne-foer.jpg',
+    ],
     highlight: 'Hjertet af Vejle',
   },
   {
