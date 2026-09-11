@@ -233,6 +233,34 @@ export const cases: ProjectCase[] = [
     highlight: '147 vindueselementer',
   },
   {
+    slug: 'integreret-carport-koekken',
+    title: 'Integreret carport',
+    category: 'Tilbygning',
+    location: 'Trekantsområdet',
+    year: 2025,
+    summary:
+      'Den eksisterende carport er integreret i boligen og rummer nu et moderne køkken, mens en ny tilbygning på bagsiden har givet familien flere kvadratmeter.',
+    description:
+      'Vi har hjulpet kunden med at integrere den eksisterende carport i boligen samtidig med, at der er opført en ny tilbygning på bagsiden af huset. Den tidligere carport er nu blevet en naturlig del af hjemmet og rummer blandt andet et nyt, moderne køkken med masser af lys og funktionalitet. Samtidig har tilbygningen på bagsiden givet familien endnu flere anvendelige kvadratmeter og skabt en flot helhed i boligens udtryk. Der er lagt vægt på, at det nye matcher husets eksisterende arkitektur, så resultatet fremstår stilrent og gennemført.',
+    scope: [
+      'Integrering af eksisterende carport i boligen',
+      'Nyt moderne køkken i den tidligere carport',
+      'Ny tilbygning på bagsiden af huset',
+      'Facader i matchende arkitektur og udtryk',
+    ],
+    duration: '12 uger',
+    tone: 'carport',
+    gallery: 0,
+    image: '/images/case-integreret-carport-1.jpg',
+    galleryImages: [
+      '/images/case-integreret-carport-2.jpg',
+      '/images/case-integreret-carport-3.jpg',
+      '/images/case-integreret-carport-4.jpg',
+      '/images/case-integreret-carport-5.jpg',
+      '/images/case-integreret-carport-6.jpg',
+    ],
+  },
+  {
     slug: 'fuldlimet-egetraesgulv-bredsten',
     title: 'Fuldlimet egetræsgulv',
     category: 'Renovering',
