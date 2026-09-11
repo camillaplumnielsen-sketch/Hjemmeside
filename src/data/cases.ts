@@ -90,8 +90,8 @@ export const cases: ProjectCase[] = [
     duration: 'Igangværende',
     tone: 'window',
     gallery: 0,
-    beforeImage: '/images/case-torvehallerne-foer.jpg',
-    afterImage: '/images/case-torvehallerne-efter.jpg',
+    image: '/images/case-torvehallerne-efter.jpg',
+    galleryImages: ['/images/case-torvehallerne-foer.jpg'],
     highlight: 'Hjertet af Vejle',
   },
   {
