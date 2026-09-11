@@ -35,6 +35,35 @@ export type ProjectCase = {
 // derefter og er fortsat tilgængelige under deres respektive kategori-filtre.
 export const cases: ProjectCase[] = [
   {
+    slug: 'tilbygning-thermowood-bredballe',
+    title: 'Tilbygning i Thermowood, Bredballe',
+    category: 'Tilbygning',
+    location: 'Bredballe',
+    year: 2025,
+    summary:
+      'Ny tilbygning i Thermowood med udskiftning af alle vinduer i boligen – mere plads, masser af lys og et moderne udtryk.',
+    description:
+      'Til denne eksisterende villa i Bredballe har vi opført en flot tilbygning beklædt i Thermowood, der giver huset et nutidigt look uden at skæmme det oprindelige udtryk. Store glaspartier og en skydedør lukker lyset ind og skaber en naturlig forbindelse til haven, mens den sorte tagkant og inddækninger giver tilbygningen et skarpt, markant præg. Samtidig med tilbygningen har vi udskiftet samtlige vinduer i resten af boligen, så hele huset fremstår tæt, lyst og tidssvarende. Resultatet er et hjem med markant mere plads og en helstøbt, moderne fremtoning.',
+    scope: [
+      'Tilbygning i Thermowood-beklædning',
+      'Udskiftning af alle vinduer i boligen',
+      'Store glaspartier og skydedør',
+      'Sort tagkant og inddækninger',
+    ],
+    duration: '10 uger',
+    tone: 'extension',
+    gallery: 0,
+    image: '/images/case-tilbygning-bredballe-1.jpg',
+    galleryImages: [
+      '/images/case-tilbygning-bredballe-2.jpg',
+      '/images/case-tilbygning-bredballe-3.jpg',
+      '/images/case-tilbygning-bredballe-4.jpg',
+      '/images/case-tilbygning-bredballe-5.jpg',
+      '/images/case-tilbygning-bredballe-6.jpg',
+      '/images/case-tilbygning-bredballe-7.jpg',
+    ],
+  },
+  {
     slug: 'renovering-knabberup',
     title: 'Omfattende renovering af Knabberup Mølle',
     category: 'Renovering',
