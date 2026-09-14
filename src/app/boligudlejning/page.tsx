@@ -69,14 +69,10 @@ export default function BoligudlejningPage() {
               vi har lagt stor vægt på at skabe energirigtige, flotte og funktionelle boliger – boliger, vi selv
               ville have lyst til at bo i.
             </p>
-            <a
-              href="https://www.vejle.dk/da/oplevelser/det-sker/prisuddelinger/vejle-prisen-og-borgernes-arkitekturpris/aarets-afstemning-til-borgernes-arkitekturpris/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-accent mt-8 inline-flex"
-            >
-              Stem på os – nr. 2, Rækkehusbebyggelse i Ågård
-            </a>
+            <div className="mt-8 inline-flex items-center gap-2 rounded-full border border-forest-200 bg-forest-50 px-5 py-2.5 text-sm font-semibold text-forest-700">
+              <span className="h-2 w-2 rounded-full bg-wood-400" />
+              Afstemningen er afsluttet – vi afventer resultatet
+            </div>
           </div>
           <div className="grid grid-cols-2 gap-0.5 bg-forest-100">
             {/* eslint-disable-next-line @next/next/no-img-element */}
