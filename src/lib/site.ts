@@ -10,7 +10,7 @@ export const site = {
   founded: 2007,
   tagline: 'Kvalitetshåndværk siden 2007',
   description:
-    'Tømrer- og entreprenørfirma med håndværk i højsædet – fra første skitse til sidste søm. Vi hjælper private, erhverv og det offentlige med tømrer-, tag- og entreprenøropgaver i Bredsten, Vejle, Jelling, Give – hele Vejle Kommune.',
+    'Tømrer- og entreprenørfirma med håndværk i højsædet – fra første skitse til sidste søm. Vi hjælper private, erhverv og det offentlige med tømrer-, tag- og entreprenøropgaver i Bredsten, Vejle, Jelling, Give, Kolding og Hedensted – hele Trekantsområdet.',
   employees: '10-11',
   // Skift til det endelige domæne inden lancering
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.brdrlarsen.dk',
@@ -23,7 +23,7 @@ export const site = {
     region: 'Region Syddanmark',
     country: 'DK',
   },
-  areaServed: ['Bredsten', 'Vejle', 'Jelling', 'Give', 'Børkop', 'Fredericia', 'Egtved'],
+  areaServed: ['Bredsten', 'Vejle', 'Jelling', 'Give', 'Børkop', 'Fredericia', 'Egtved', 'Kolding', 'Hedensted'],
   openingHours: 'Man–fre 08.00–16.00',
   cvr: '30546350',
   social: {

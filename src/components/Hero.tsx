@@ -48,7 +48,7 @@ export function Hero() {
           <p className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-cream-100/85">
             Tømrer- og entreprenørfirma med håndværk i højsædet – fra første skitse til sidste søm. Vi hjælper
             private, erhverv og det offentlige med tømrer-, tag- og entreprenøropgaver i Bredsten, Vejle, Jelling,
-            Give – hele Vejle Kommune.
+            Give, Kolding og Hedensted – hele Trekantsområdet.
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">

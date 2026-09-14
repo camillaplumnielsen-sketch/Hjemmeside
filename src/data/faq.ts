@@ -5,7 +5,7 @@ export const generalFaq: FaqItem[] = [
   {
     question: 'Hvilke områder dækker I?',
     answer:
-      'Vi har base i Bredsten og arbejder i hele Vejle-området samt Jelling, Give, Børkop, Egtved, Fredericia og omegn. Er du i tvivl om, vi kommer til dig, så ring endelig.',
+      'Vi har base i Bredsten og arbejder i hele Vejle-området samt Jelling, Give, Børkop, Egtved, Fredericia, Kolding og Hedensted og omegn. Er du i tvivl om, vi kommer til dig, så ring endelig.',
   },
   {
     question: 'Koster det noget at få et tilbud?',
