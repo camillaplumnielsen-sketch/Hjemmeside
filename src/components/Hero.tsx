@@ -33,19 +33,30 @@ export function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="max-w-3xl"
+          className="max-w-5xl"
         >
           <span className="inline-flex items-center gap-2 rounded-full border border-cream-50/20 bg-cream-50/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-cream-100 backdrop-blur-md">
             <span className="h-1.5 w-1.5 rounded-full bg-wood-400" />
             Tømrer i Trekantsområdet
           </span>
 
-          <h1 className="mt-6 font-display text-display-lg font-semibold text-balance">
-            Tømrerfirmaet Brdr. Larsen
-          </h1>
-          <p className="mt-3 font-display text-xl font-medium text-wood-300 sm:text-2xl">
-            Kvalitetshåndværk siden 2007
-          </p>
+          <div className="mt-6 flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:gap-8">
+            <div>
+              <h1 className="font-display text-display-lg font-semibold text-balance">
+                Tømrerfirmaet Brdr. Larsen
+              </h1>
+              <p className="mt-3 font-display text-xl font-medium text-wood-300 sm:text-2xl">
+                Kvalitetshåndværk siden 2007
+              </p>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/handyman-tegning.png"
+              alt=""
+              aria-hidden="true"
+              className="hidden w-32 shrink-0 opacity-25 sm:block md:w-40 lg:w-48"
+            />
+          </div>
 
           <p className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-cream-100/85">
             Tømrer- og entreprenørfirma med håndværk i højsædet – fra første skitse til sidste søm. Vi hjælper
