@@ -54,7 +54,7 @@ export function Hero() {
               src="/images/handyman-tegning.png"
               alt=""
               aria-hidden="true"
-              className="hidden w-32 shrink-0 opacity-25 sm:block md:w-40 lg:w-48"
+              className="hidden w-44 shrink-0 opacity-25 sm:block md:w-56 lg:w-72"
             />
           </div>
 
