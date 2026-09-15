@@ -40,10 +40,12 @@ export function Hero() {
             Tømrer i Trekantsområdet
           </span>
 
-          <h1 className="mt-6 font-display text-display-xl font-semibold text-balance">
-            Kvalitetshåndværk
-            <span className="block text-wood-300">siden 2007</span>
+          <h1 className="mt-6 font-display text-display-lg font-semibold text-balance">
+            Tømrerfirmaet Brdr. Larsen
           </h1>
+          <p className="mt-3 font-display text-xl font-medium text-wood-300 sm:text-2xl">
+            Kvalitetshåndværk siden 2007
+          </p>
 
           <p className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-cream-100/85">
             Tømrer- og entreprenørfirma med håndværk i højsædet – fra første skitse til sidste søm. Vi hjælper
