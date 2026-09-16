@@ -108,6 +108,34 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
         </div>
       </section>
 
+      {/* Håndværkerfradrag */}
+      <section className="container-max pb-4">
+        <Reveal className="mx-auto flex max-w-3xl flex-col items-start gap-4 rounded-3xl border border-wood-200 bg-wood-50 p-6 sm:flex-row sm:items-center sm:p-7">
+          <span className="flex h-12 w-12 flex-none items-center justify-center rounded-2xl bg-wood-400 text-cream-50">
+            <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <line x1="19" y1="5" x2="5" y2="19" />
+              <circle cx="6.5" cy="6.5" r="2.5" />
+              <circle cx="17.5" cy="17.5" r="2.5" />
+            </svg>
+          </span>
+          <div>
+            <h3 className="font-display text-lg font-semibold text-forest-900">Husk håndværkerfradraget</h3>
+            <p className="mt-1.5 text-sm leading-relaxed text-forest-600">
+              For udvalgte håndværksydelser kan du opnå fradrag for arbejdslønnen – op til 9.000 kr. pr. person i
+              2026. Tjek om din opgave er omfattet, og se det aktuelle beløb hos Skat.{' '}
+              <a
+                href="https://skat.dk/borger/fradrag/servicefradrag/haandvaerkerfradrag"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-forest-800 underline underline-offset-2 hover:text-forest-900"
+              >
+                Læs mere på skat.dk
+              </a>
+            </p>
+          </div>
+        </Reveal>
+      </section>
+
       {/* Proces */}
       <section className="surface-wood py-section">
         <div className="container-max">
