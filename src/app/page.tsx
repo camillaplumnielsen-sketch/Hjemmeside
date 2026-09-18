@@ -25,33 +25,40 @@ export default function HomePage() {
 
       {/* Velfac-certificering */}
       <section className="container-max pt-10">
-        <Reveal className="mx-auto flex max-w-3xl flex-col items-center gap-8 overflow-hidden rounded-4xl border border-teal-100 bg-white p-6 shadow-soft sm:flex-row sm:p-8 border-t-4 border-t-teal-600">
-          <div className="text-center sm:text-left">
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-teal-700">
-              Officiel certificering
-            </span>
-            <h2 className="mt-3 font-display text-2xl font-semibold text-forest-900">
-              Certificeret VinduesMester
-            </h2>
-            <p className="mt-2 text-forest-600">
-              Vi er officielt certificeret VinduesMester – din garanti for korrekt rådgivning, professionel montering
-              og kvalitetshåndværk, når det gælder vinduer og døre.
-            </p>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/logo-velfac-vinduesmester-lockup.png"
-              alt="Velfac VinduesMester"
-              className="mx-auto mt-5 h-9 w-auto sm:mx-0"
-            />
-          </div>
-          <div className="flex flex-none items-center justify-center">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/logo-velfac-vinduesmester-badge.png"
-              alt="Certificeret Velfac VinduesMester"
-              className="h-36 w-36"
-            />
-          </div>
+        <Reveal className="mx-auto max-w-3xl">
+          <a
+            href="https://velfac.dk/kob-velfac/montering/velfac-vinduesmester/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center gap-8 overflow-hidden rounded-4xl border border-teal-100 bg-white p-6 shadow-soft transition-all duration-300 ease-premium hover:-translate-y-1 hover:shadow-lift sm:flex-row sm:p-8 border-t-4 border-t-teal-600"
+          >
+            <div className="text-center sm:text-left">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-teal-700">
+                Officiel certificering
+              </span>
+              <h2 className="mt-3 font-display text-2xl font-semibold text-forest-900">
+                Certificeret VinduesMester
+              </h2>
+              <p className="mt-2 text-forest-600">
+                Vi er officielt certificeret VinduesMester – din garanti for korrekt rådgivning, professionel
+                montering og kvalitetshåndværk, når det gælder vinduer og døre.
+              </p>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/logo-velfac-vinduesmester-lockup.png"
+                alt="Velfac VinduesMester"
+                className="mx-auto mt-5 h-9 w-auto sm:mx-0"
+              />
+            </div>
+            <div className="flex flex-none items-center justify-center">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/logo-velfac-vinduesmester-badge.png"
+                alt="Certificeret Velfac VinduesMester"
+                className="h-36 w-36"
+              />
+            </div>
+          </a>
         </Reveal>
       </section>
 
