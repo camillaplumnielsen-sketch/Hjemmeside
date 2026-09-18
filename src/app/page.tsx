@@ -37,10 +37,10 @@ export default function HomePage() {
                 Officiel certificering
               </span>
               <h2 className="mt-3 font-display text-2xl font-semibold text-forest-900">
-                Certificeret VinduesMester
+                Certificeret VELFAC VinduesMester
               </h2>
               <p className="mt-2 text-forest-600">
-                Vi er officielt certificeret VinduesMester – din garanti for korrekt rådgivning, professionel
+                Vi er officielt certificeret VELFAC VinduesMester – din garanti for korrekt rådgivning, professionel
                 montering og kvalitetshåndværk, når det gælder vinduer og døre.
               </p>
               {/* eslint-disable-next-line @next/next/no-img-element */}
