@@ -322,20 +322,6 @@ export const cases: ProjectCase[] = [
     image: '/images/case-vinduer-nr-snede.jpg',
   },
   {
-    slug: 'carport-give',
-    title: 'Dobbeltcarport med redskabsrum',
-    category: 'Carport',
-    location: 'Give',
-    year: 2024,
-    summary: 'Solid dobbeltcarport med integreret skur, designet til at matche huset.',
-    description:
-      'Vi byggede en dobbeltcarport med integreret redskabsrum i sortmalet træ, der spiller flot sammen med husets facade. Konstruktionen er solid, funderet korrekt og bygget til at holde i mange år.',
-    scope: ['Dobbeltcarport', 'Integreret redskabsrum', 'Sortmalet træ', 'Fast fundering'],
-    duration: '2 uger',
-    tone: 'carport',
-    gallery: 3,
-  },
-  {
     slug: 'vognly-carport-sortmalet-thermowood',
     title: 'Vognly i sortmalet superwood',
     category: 'Carport',

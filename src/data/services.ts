@@ -242,7 +242,7 @@ export const services: Service[] = [
         answer: 'Ja, vi bygger gerne carporte kombineret med skur eller redskabsrum, tilpasset dine behov.',
       },
     ],
-    relatedCases: ['carport-give'],
+    relatedCases: ['vognly-carport-sortmalet-thermowood'],
     keywords: ['carport Vejle', 'carport Bredsten', 'overdækning Vejle', 'skur Vejle'],
   },
   {
