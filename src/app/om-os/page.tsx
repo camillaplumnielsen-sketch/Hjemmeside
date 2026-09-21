@@ -9,7 +9,7 @@ import { buildMetadata } from '@/lib/seo';
 import { site } from '@/lib/site';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Om os – Familietømrer i Bredsten & Vejle',
+  title: 'Om os – Familietømrer i Jerlev & Vejle',
   description:
     'Brdr. Larsen er en lokal familietømrervirksomhed etableret i 2007. Mød holdet, læs om vores værdier og den måde, vi arbejder på i Vejle-området.',
   path: '/om-os',
@@ -44,7 +44,7 @@ export default function OmOsPage() {
           </h1>
           <p className="mt-5 max-w-2xl text-pretty text-lg text-cream-100/85">
             Siden {site.founded} har vi bygget vores navn på ærligt arbejde, personlig service og et resultat, kunderne
-            gerne anbefaler videre. Vi er {site.employees} medarbejdere med base i {site.address.city}.
+            gerne anbefaler videre. Vi er {site.employees} medarbejdere med base i {site.address.city}, tæt på Vejle.
           </p>
         </div>
       </section>
@@ -93,7 +93,7 @@ export default function OmOsPage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/om-os-vaerksted.jpg"
-              alt="Værkstedet i Bredsten, hvor Tømrerfirmaet Brdr. Larsens projekter starter"
+              alt="Værkstedet i Jerlev, hvor Tømrerfirmaet Brdr. Larsens projekter starter"
               className="aspect-[4/5] w-full object-cover"
             />
           </Reveal>

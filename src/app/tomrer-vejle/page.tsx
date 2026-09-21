@@ -31,7 +31,7 @@ export default function TomrerVejlePage() {
         'Gratis og uforpligtende besigtigelse',
       ]}
       faq={[
-        { question: 'Er I en lokal tømrer i Vejle?', answer: 'Ja. Vi har base i Bredsten lige uden for Vejle og arbejder i hele Vejle-området hver dag.' },
+        { question: 'Er I en lokal tømrer i Vejle?', answer: 'Ja. Vi har base i Jerlev tæt på Vejle og arbejder i hele Vejle-området hver dag.' },
         { question: 'Hvilke opgaver løser I i Vejle?', answer: 'Alt inden for tømrerarbejde: nyt tag, renovering, tilbygninger, vinduer og døre, carporte og specialopgaver.' },
         { question: 'Koster det noget at få et tilbud?', answer: 'Nej, både besigtigelse og tilbud er gratis og uforpligtende.' },
         { question: 'Hvor hurtigt kan I komme?', answer: 'Kontakt os, så finder vi hurtigt en tid til besigtigelse og aftaler en realistisk tidsplan.' },

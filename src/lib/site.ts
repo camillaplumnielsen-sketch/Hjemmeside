@@ -19,7 +19,7 @@ export const site = {
   phoneDisplay: '22 44 08 46',
   // Ingen offentlig gadeadresse – servicevirksomhed uden kundefremmøde på adressen.
   address: {
-    city: 'Bredsten',
+    city: 'Jerlev',
     region: 'Region Syddanmark',
     country: 'DK',
   },
