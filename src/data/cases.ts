@@ -337,15 +337,15 @@ export const cases: ProjectCase[] = [
   },
   {
     slug: 'vognly-carport-sortmalet-thermowood',
-    title: 'Vognly og carport i sortmalet thermowood',
+    title: 'Vognly i sortmalet superwood',
     category: 'Carport',
     location: 'Trekantsområdet',
     year: 2025,
     summary:
-      'Moderne vognly/carport i sortmalet thermowood med tagpap og indbygget redskabsrum – enkelt design med et eksklusivt udtryk.',
+      'Moderne vognly i sortmalet superwood med tagpap og indbygget redskabsrum – enkelt design med et eksklusivt udtryk.',
     description:
-      'Til dette projekt har vi opført et moderne og funktionelt vognly/carport, hvor materialevalg og et enkelt design går hånd i hånd. Vognlyet er opført i sortmalet thermowood, som giver konstruktionen et eksklusivt og moderne udtryk. Det mørke træ skaber samtidig en flot kontrast til omgivelserne og giver et stilrent helhedsindtryk. Taget er udført med tagpap, som understøtter det enkle design og giver en robust og vejrbestandig tagløsning. Som en integreret del af vognlyet er der etableret et indbygget redskabsrum, der giver praktisk og afskærmet opbevaringsplads til haveredskaber, cykler og øvrigt udstyr. Projektet er et godt eksempel på, hvordan en carport kan være mere end blot en overdækning – med gennemtænkte detaljer og de rigtige materialer bliver den en naturlig og flot del af boligens arkitektur.',
-    scope: ['Vognly/carport i sortmalet thermowood', 'Tag i tagpap', 'Indbygget redskabsrum', 'Enkelt, gennemført design'],
+      'Til dette projekt har vi opført et moderne og funktionelt vognly, hvor materialevalg og et enkelt design går hånd i hånd. Vognlyet er opført i sortmalet superwood, som giver konstruktionen et eksklusivt og moderne udtryk. Det mørke træ skaber samtidig en flot kontrast til omgivelserne og giver et stilrent helhedsindtryk. Taget er udført med tagpap, som understøtter det enkle design og giver en robust og vejrbestandig tagløsning. Som en integreret del af vognlyet er der etableret et indbygget redskabsrum, der giver praktisk og afskærmet opbevaringsplads til haveredskaber, cykler og øvrigt udstyr. Projektet er et godt eksempel på, hvordan en carport kan være mere end blot en overdækning – med gennemtænkte detaljer og de rigtige materialer bliver den en naturlig og flot del af boligens arkitektur.',
+    scope: ['Vognly i sortmalet superwood', 'Tag i tagpap', 'Indbygget redskabsrum', 'Enkelt, gennemført design'],
     duration: '3 uger',
     tone: 'carport',
     gallery: 0,
