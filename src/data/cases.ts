@@ -212,7 +212,11 @@ export const cases: ProjectCase[] = [
     tone: 'special',
     gallery: 0,
     image: '/images/case-bro-vejle-aa-1.jpg',
-    galleryImages: ['/images/case-bro-vejle-aa-2.jpg'],
+    galleryImages: [
+      '/images/case-bro-vejle-aa-2.jpg',
+      '/images/case-bro-vejle-aa-3.jpg',
+      '/images/case-bro-vejle-aa-4.jpg',
+    ],
     highlight: 'Bygget over vand',
   },
   {
