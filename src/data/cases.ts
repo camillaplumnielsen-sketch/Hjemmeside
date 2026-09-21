@@ -35,6 +35,32 @@ export type ProjectCase = {
 // derefter og er fortsat tilgængelige under deres respektive kategori-filtre.
 export const cases: ProjectCase[] = [
   {
+    slug: 'arkitekttegnet-villa-moelholm',
+    title: 'Arkitekttegnet villa i Mølholm',
+    category: 'Special',
+    location: 'Mølholm, Vejle',
+    year: 2025,
+    summary:
+      'En smuk arkitekttegnet villa i Mølholm for en privat bygherre – opført med Petersen-tegl, VELFAC-vinduer, thermowood og Dinesen-gulve.',
+    description:
+      'For en privat bygherre i Mølholm har vi været med til at opføre denne arkitekttegnede villa, hvor der er lagt vægt på tanke og erfaring bag hver eneste detalje i udførelsen. Huset fremstår med en gennemført materialeholdning – facader i lys Petersen-tegl kombineret med varme thermowood-partier, store VELFAC-vinduer og -glaspartier, der trækker lys og udsigt ind i boligen, samt Dinesen-gulve indenfor. Resultatet er et markant, moderne hjem med en råt-elegant arkitektur, en stor tagterrasse og en materialefortælling, der går igen fra facade til gulv.',
+    scope: ['Facade i Petersen-tegl', 'Thermowood-beklædning', 'VELFAC-vinduer og glaspartier', 'Dinesen-gulve', 'Tagterrasse i træ'],
+    duration: '9 måneder',
+    tone: 'special',
+    gallery: 0,
+    image: '/images/case-villa-moelholm-1.jpg',
+    galleryImages: [
+      '/images/case-villa-moelholm-2.jpg',
+      '/images/case-villa-moelholm-3.jpg',
+      '/images/case-villa-moelholm-4.jpg',
+      '/images/case-villa-moelholm-5.jpg',
+      '/images/case-villa-moelholm-6.jpg',
+      '/images/case-villa-moelholm-7.jpg',
+      '/images/case-villa-moelholm-8.jpg',
+    ],
+    highlight: 'Arkitekttegnet nybyg',
+  },
+  {
     slug: 'tilbygning-thermowood-bredballe',
     title: 'Tilbygning i Thermowood, Bredballe',
     category: 'Tilbygning',
