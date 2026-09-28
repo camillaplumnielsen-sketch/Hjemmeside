@@ -124,7 +124,7 @@ export const cases: ProjectCase[] = [
     year: 2025,
     summary: 'Ny tilbygning med større spisestue og et stemningsfuldt vinrum, der skaber mere plads og bedre sammenhæng i boligen.',
     description:
-      'Ny tilbygning, som har skabt mere plads og bedre sammenhæng i boligen. Kundens ønske var en større spisestue og et stemningsfuldt vinrum. Resultatet er en tilbygning, der passer naturligt til villaens arkitektur og samtidig opfylder familiens behov for mere funktionel plads. Vinrummet er skræddersyet, hvor gammel, rå mursten møder varm eg og et bord i sort natursten. Rummet rummer alt fra klassiske flaskereoler og et diagonalt opbevaringsgitter til indbyggede skabe og hylder, der skaber overblik over en stor og varieret vinsamling, mens skydedøren i stål og glas og det panelklædte loft giver en intim og eksklusiv stemning.',
+      'Ny tilbygning, som har skabt mere plads og bedre sammenhæng i boligen. Kundens ønske var en større spisestue og et stemningsfuldt vinrum. Resultatet er en tilbygning, der passer naturligt til villaens arkitektur og samtidig opfylder familiens behov for mere funktionel plads. Vinrummet er skræddersyet, hvor gammel, rå mursten møder varm eg og et bord i sort natursten. Rummet rummer alt fra klassiske flaskereoler og et diagonalt opbevaringsgitter til indbyggede skabe og hylder, der skaber overblik over en stor og varieret vinsamling, mens glasdøren med sideparti og det panelklædte loft giver en intim og eksklusiv stemning.',
     scope: ['Ny spisestue', 'Stemningsfuldt vinrum i mursten og eg', 'Store glaspartier', 'Facade i matchende materialer'],
     duration: '10 uger',
     tone: 'extension',
