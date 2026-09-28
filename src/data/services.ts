@@ -273,11 +273,6 @@ export const services: Service[] = [
     ],
     faq: [
       {
-        question: 'Hvilke specialopgaver løser I?',
-        answer:
-          'Alt fra indbygget inventar, specialtrapper og loftløsninger til restaurering af ældre bygninger og komplekse konstruktioner.',
-      },
-      {
         question: 'Kan I hjælpe, hvis jeg kun har en løs idé?',
         answer: 'Ja. Vi er vant til at udvikle løsningen sammen med kunden fra en indledende idé til færdigt håndværk.',
       },
