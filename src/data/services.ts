@@ -279,7 +279,7 @@ export const services: Service[] = [
         answer: 'Ja. Vi er vant til at udvikle løsningen sammen med kunden fra en indledende idé til færdigt håndværk.',
       },
     ],
-    relatedCases: ['sommerhus-vesterhavet', 'traebro-vejle-aa'],
+    relatedCases: ['sommerhus-vesterhavet', 'traebro-vejle-aa', 'tilbygning-spisestue-vinrum-bredsten'],
     keywords: ['snedker Vejle', 'specialopgaver tømrer Vejle', 'indbygget inventar Vejle'],
   },
 ];
