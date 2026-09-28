@@ -64,7 +64,12 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
       {/* Hero */}
       <section className="relative overflow-hidden bg-forest-950 pt-[110px] text-cream-50">
         <div className="absolute inset-0 opacity-40">
-          <SceneImage tone={service.icon} variant="neutral" className="h-full w-full object-cover" rounded={false} />
+          {service.heroImage ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={service.heroImage} alt="" className="h-full w-full object-cover" />
+          ) : (
+            <SceneImage tone={service.icon} variant="neutral" className="h-full w-full object-cover" rounded={false} />
+          )}
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-forest-950 to-forest-950/60" />
         <div className="container-max relative z-10 py-16">

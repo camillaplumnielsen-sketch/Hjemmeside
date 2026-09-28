@@ -17,6 +17,8 @@ export type Service = {
   intro: string;
   /** Emoji/ikon-nøgle brugt af ServiceIcon */
   icon: 'roof' | 'renovation' | 'extension' | 'window' | 'carport' | 'special';
+  /** Rigtigt foto til hero-baggrunden – bruges i stedet for SVG-placeholderen, når det er sat */
+  heroImage?: string;
   benefits: { title: string; description: string }[];
   process: ProcessStep[];
   faq: FaqItem[];
@@ -256,6 +258,7 @@ export const services: Service[] = [
     intro:
       'Nogle opgaver kræver særlig erfaring og et godt øje for detaljen. Vi elsker de projekter, hvor standardløsninger ikke slår til – fra indbygget inventar og trapper til komplekse konstruktioner og restaurering.',
     icon: 'special',
+    heroImage: '/images/case-vinrum-1.jpg',
     benefits: [
       { title: 'Skræddersyet', description: 'Vi bygger unikke løsninger, der passer præcist til dit rum og dine ønsker.' },
       { title: 'Snedkerpræcision', description: 'Indbygget inventar, trapper og finish udført med sans for detaljen.' },
