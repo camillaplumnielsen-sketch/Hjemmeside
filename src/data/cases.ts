@@ -35,6 +35,29 @@ export type ProjectCase = {
 // derefter og er fortsat tilgængelige under deres respektive kategori-filtre.
 export const cases: ProjectCase[] = [
   {
+    slug: 'eksklusivt-vinrum',
+    title: 'Eksklusivt vinrum i mursten og eg',
+    category: 'Special',
+    location: 'Vejle',
+    year: 2025,
+    summary:
+      'Skræddersyet vinrum med gammel mursten, flaskereoler og skabe i eg samt bord i sort natursten – bygget til en stor vinsamling.',
+    description:
+      'Til dette projekt har vi tegnet og bygget et eksklusivt vinrum, hvor gammel, rå mursten møder varm eg og et bord i sort natursten. Rummet rummer alt fra klassiske flaskereoler og et diagonalt opbevaringsgitter til indbyggede skabe og hylder, der skaber overblik over en stor og varieret vinsamling. Skydedøren i stål og glas lukker rummet elegant af, mens spotbelysning og det panelklædte loft giver en intim og eksklusiv stemning. Resultatet er et gennemført vinrum, der er lige dele opbevaring og oplevelse – et sted, hvor hver eneste detalje er tænkt igennem.',
+    scope: ['Skræddersyet vinrum', 'Flaskereoler og opbevaring i eg', 'Bord i sort natursten', 'Skydedør i stål og glas'],
+    duration: '6 uger',
+    tone: 'special',
+    gallery: 0,
+    image: '/images/case-vinrum-1.jpg',
+    galleryImages: [
+      '/images/case-vinrum-2.jpg',
+      '/images/case-vinrum-3.jpg',
+      '/images/case-vinrum-4.jpg',
+      '/images/case-vinrum-5.jpg',
+      '/images/case-vinrum-6.jpg',
+    ],
+  },
+  {
     slug: 'arkitekttegnet-villa-moelholm',
     title: 'Arkitekttegnet villa i Mølholm',
     category: 'Special',
