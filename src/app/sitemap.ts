@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/om-os',
     '/kundeanmeldelser',
     '/kontakt',
+    '/privatlivspolitik',
     '/tomrer-vejle',
     '/nyt-tag-vejle',
     '/tagrenovering-vejle',

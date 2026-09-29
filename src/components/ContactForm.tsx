@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useState } from 'react';
 import { services } from '@/data/services';
 
@@ -158,7 +159,15 @@ export function ContactForm({ defaultService }: { defaultService?: string }) {
         </span>
       </label>
 
-      <button type="submit" disabled={status === 'sending'} className="btn-accent mt-6 w-full disabled:opacity-50">
+      <p className="mt-5 text-center text-xs text-forest-500">
+        Når du sender formularen, behandler vi dine oplysninger som beskrevet i vores{' '}
+        <Link href="/privatlivspolitik" className="underline decoration-forest-300 underline-offset-2 hover:text-forest-800">
+          privatlivspolitik
+        </Link>
+        .
+      </p>
+
+      <button type="submit" disabled={status === 'sending'} className="btn-accent mt-3 w-full disabled:opacity-50">
         {status === 'sending' ? 'Sender…' : 'Få et uforpligtende tilbud'}
       </button>
       {status === 'error' && <p className="mt-3 text-center text-sm text-red-600">Noget gik galt. Prøv igen, eller ring til os.</p>}

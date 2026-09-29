@@ -105,7 +105,12 @@ export function Footer() {
           <p>
             © {year} {site.legalName}. Alle rettigheder forbeholdes.
           </p>
-          <p>CVR {site.cvr} · Tømrer i Vejle &amp; Bredsten · Medlem af Dansk Industri</p>
+          <p>
+            CVR {site.cvr} · Tømrer i Vejle &amp; Bredsten · Medlem af Dansk Industri ·{' '}
+            <Link href="/privatlivspolitik" className="underline decoration-cream-100/30 underline-offset-2 hover:text-cream-50">
+              Privatlivspolitik
+            </Link>
+          </p>
         </div>
       </div>
     </footer>
