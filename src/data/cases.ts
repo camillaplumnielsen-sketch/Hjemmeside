@@ -133,6 +133,10 @@ export const cases: ProjectCase[] = [
     galleryImages: [
       '/images/case-tilbygning-bredsten-2.jpg',
       '/images/case-tilbygning-bredsten-3.jpg',
+      '/images/case-tilbygning-bredsten-4.jpg',
+      '/images/case-tilbygning-bredsten-5.jpg',
+      '/images/case-tilbygning-bredsten-6.jpg',
+      '/images/case-tilbygning-bredsten-7.jpg',
       '/images/case-vinrum-1.jpg',
       '/images/case-vinrum-2.jpg',
       '/images/case-vinrum-3.jpg',
