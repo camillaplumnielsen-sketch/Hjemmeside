@@ -77,11 +77,10 @@ export default function BoligudlejningPage() {
               på fællesskab og grøn natur. Når vi bygger, tænker vi langsigtet – vi bygger gode hjem, som
               mennesker skal bo i mange år frem, og vi har altid én intention: vi skal selv kunne se os bo i
               boligerne.“
-              <footer className="mt-2 text-sm not-italic text-forest-500">— Fra talen ved prisoverrækkelsen</footer>
             </blockquote>
             <p className="mt-4 text-pretty text-forest-600">
               Tak til Hellum Architects og Vejle Kommune for et rigtig godt samarbejde, og en stor tak til vores
-              eget hold, der har bygget det hele – prisen er i høj grad jeres.
+              eget hold, der har bygget det hele.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <div className="inline-flex items-center gap-2 rounded-full border border-forest-200 bg-forest-50 px-5 py-2.5 text-sm font-semibold text-forest-700">
@@ -93,6 +92,14 @@ export default function BoligudlejningPage() {
                 Vinder af Borgernes Arkitekturpris 2025
               </div>
             </div>
+            <a
+              href="https://www.vejle.dk/da/oplevelser/det-sker/prisuddelinger/vejle-prisen-og-borgernes-arkitekturpris/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-wood-600 underline underline-offset-4 hover:text-wood-700"
+            >
+              Læs mere om Vejle-Prisen og Borgernes Arkitekturpris hos Vejle Kommune
+            </a>
           </div>
           <div className="grid grid-cols-2 gap-0.5 bg-forest-100">
             {/* eslint-disable-next-line @next/next/no-img-element */}
