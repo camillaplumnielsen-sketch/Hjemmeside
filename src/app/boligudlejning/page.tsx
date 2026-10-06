@@ -51,27 +51,47 @@ export default function BoligudlejningPage() {
         </div>
       </section>
 
-      {/* Nomineret til Borgernes Arkitekturpris */}
+      {/* Vinder af Vejle-Prisen og Borgernes Arkitekturpris 2025 */}
       <section className="container-max py-section">
         <Reveal className="overflow-hidden rounded-4xl border border-forest-100 bg-white shadow-lift lg:grid lg:grid-cols-2 lg:items-stretch">
           <div className="p-8 sm:p-10 lg:p-12">
-            <span className="eyebrow text-wood-500">Borgernes Arkitekturpris</span>
+            <span className="eyebrow text-wood-500">Vejle-Prisen & Borgernes Arkitekturpris 2025</span>
             <h2 className="mt-4 font-display text-display-md font-semibold text-forest-900 text-balance">
-              Vi er nomineret!
+              Vi har vundet – dobbelt hæder til Kirsten Madsens Vej!
             </h2>
             <p className="mt-5 text-pretty text-forest-600">
-              Vores lejeboliger på Kirsten Madsens Vej i Ågård er nomineret til Borgernes Arkitekturpris i Vejle
-              Kommune. Projektet er noget helt særligt for os – vi købte grunden, efter den 150 år gamle mølle blev
-              revet ned, og har været med hele vejen fra de første idéer til det færdige byggeri.
+              Den 5. oktober 2026 blev vores lejeboliger på Kirsten Madsens Vej i Ågård tildelt både Vejle-Prisen
+              og Borgernes Arkitekturpris. Vi var inviteret af Vejle Kommune til Arkitekturens Dag 2026 med
+              arkitekturoplæg og prisuddeling på Værket i Vejle.
             </p>
             <p className="mt-4 text-pretty text-forest-600">
-              Lokalplanen er udarbejdet i tæt samarbejde med vores arkitekt Hellum Architects og Vejle Kommune, og
-              vi har lagt stor vægt på at skabe energirigtige, flotte og funktionelle boliger – boliger, vi selv
-              ville have lyst til at bo i.
+              Tak for Vejle Kommunes anerkendelse med Vejle-Prisen – den er vi stolte og ydmyge over. Det er
+              dejligt, at kommunen har øje for god arkitektur, nytænkning og den grønne omstilling. Det tager lang
+              tid og er et langt, sejt træk – mange års proces for at nå hertil med fokus på fornuftige boliger, og
+              den tilgang bestræber vi os på at fortsætte med. Og tak til alle jer, der stemte på projektet til
+              Borgernes Arkitekturpris – det var et hårdt felt, vi var oppe imod.
             </p>
-            <div className="mt-8 inline-flex items-center gap-2 rounded-full border border-forest-200 bg-forest-50 px-5 py-2.5 text-sm font-semibold text-forest-700">
-              <span className="h-2 w-2 rounded-full bg-wood-400" />
-              Afstemningen er afsluttet – vi afventer resultatet
+            <blockquote className="mt-6 border-l-4 border-wood-300 pl-4 text-pretty italic text-forest-600">
+              „Da vi købte grunden midt i Ågård, stod vi foran et af vores hidtil største projekter. Med jernlågen
+              og den gamle blodbøg ved indgangen har vi bygget med stor respekt for stedets historie og med fokus
+              på fællesskab og grøn natur. Når vi bygger, tænker vi langsigtet – vi bygger gode hjem, som
+              mennesker skal bo i mange år frem, og vi har altid én intention: vi skal selv kunne se os bo i
+              boligerne.“
+              <footer className="mt-2 text-sm not-italic text-forest-500">— Fra talen ved prisoverrækkelsen</footer>
+            </blockquote>
+            <p className="mt-4 text-pretty text-forest-600">
+              Tak til Hellum Architects og Vejle Kommune for et rigtig godt samarbejde, og en stor tak til vores
+              eget hold, der har bygget det hele – prisen er i høj grad jeres.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <div className="inline-flex items-center gap-2 rounded-full border border-forest-200 bg-forest-50 px-5 py-2.5 text-sm font-semibold text-forest-700">
+                <span className="h-2 w-2 rounded-full bg-wood-400" />
+                Vinder af Vejle-Prisen 2025
+              </div>
+              <div className="inline-flex items-center gap-2 rounded-full border border-forest-200 bg-forest-50 px-5 py-2.5 text-sm font-semibold text-forest-700">
+                <span className="h-2 w-2 rounded-full bg-wood-400" />
+                Vinder af Borgernes Arkitekturpris 2025
+              </div>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-0.5 bg-forest-100">
@@ -107,6 +127,32 @@ export default function BoligudlejningPage() {
               />
             </Reveal>
           ))}
+        </div>
+
+        <div className="mt-10">
+          <h3 className="font-display text-xl font-semibold text-forest-900">
+            Fra prisoverrækkelsen på Værket i Vejle
+          </h3>
+          <p className="mt-2 max-w-2xl text-pretty text-sm text-forest-600">
+            Arkitekturens Dag 2026 – arkitekturoplæg og prisuddeling i regi af Vejle Kommune, 5. oktober 2026.
+          </p>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { src: '/images/boligudlejning-pris-oplaeg-1.jpg', alt: 'Arkitekturoplæg på Arkitekturens Dag 2026 på Værket i Vejle' },
+              { src: '/images/boligudlejning-pris-nominerede.jpg', alt: 'De nominerede projekter til Borgernes Arkitekturpris 2025 på scenen' },
+              { src: '/images/boligudlejning-pris-vejleprisen-1.jpg', alt: 'Brdr. Larsen modtager Vejle-Prisen 2025 på scenen' },
+              { src: '/images/boligudlejning-pris-vejleprisen-2.jpg', alt: 'Brdr. Larsen modtager Vejle-Prisen 2025 med diplom og blomster' },
+              { src: '/images/boligudlejning-pris-diplom-vejleprisen.jpg', alt: 'Diplomet for Vejle-Prisen 2025 til Kirsten Madsens Vej' },
+              { src: '/images/boligudlejning-pris-borgernes-arkitekturpris.jpg', alt: 'Brdr. Larsen modtager Borgernes Arkitekturpris 2025 på scenen' },
+              { src: '/images/boligudlejning-pris-diplom-borgernes.jpg', alt: 'Diplomet for Borgernes Arkitekturpris 2025' },
+              { src: '/images/boligudlejning-pris-trofae.jpg', alt: 'Brdr. Larsen fejrer Vejle-Prisen 2025 på scenen' },
+            ].map((img, i) => (
+              <Reveal key={img.src} delay={i * 0.05} className="overflow-hidden rounded-2xl border border-forest-100">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={img.src} alt={img.alt} className="aspect-[4/3] w-full object-cover" />
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
