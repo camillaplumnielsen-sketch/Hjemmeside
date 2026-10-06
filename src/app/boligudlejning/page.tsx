@@ -65,11 +65,10 @@ export default function BoligudlejningPage() {
               arkitekturoplæg og prisuddeling på Værket i Vejle.
             </p>
             <p className="mt-4 text-pretty text-forest-600">
-              Tak for Vejle Kommunes anerkendelse med Vejle-Prisen – den er vi stolte og ydmyge over. Det er
-              dejligt, at kommunen har øje for god arkitektur, nytænkning og den grønne omstilling. Det tager lang
-              tid og er et langt, sejt træk – mange års proces for at nå hertil med fokus på fornuftige boliger, og
-              den tilgang bestræber vi os på at fortsætte med. Og tak til alle jer, der stemte på projektet til
-              Borgernes Arkitekturpris – det var et hårdt felt, vi var oppe imod.
+              Tak for Vejle Kommunes anerkendelse med Vejle-Prisen – den er vi stolte og ydmyge over. Det tager
+              lang tid og er et langt, sejt træk – mange års proces for at nå hertil med fokus på fornuftige
+              boliger, og den tilgang bestræber vi os på at fortsætte med. Og tak til alle jer, der stemte på
+              projektet til Borgernes Arkitekturpris – det var et hårdt felt, vi var oppe imod.
             </p>
             <blockquote className="mt-6 border-l-4 border-wood-300 pl-4 text-pretty italic text-forest-600">
               „Da vi købte grunden midt i Ågård, stod vi foran et af vores hidtil største projekter. Med jernlågen
