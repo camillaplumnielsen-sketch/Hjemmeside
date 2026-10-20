@@ -83,10 +83,10 @@ export function Header() {
             <PhoneIcon />
             <div className="flex flex-col whitespace-nowrap leading-tight text-xs font-semibold">
               <a href={telHref} className="hover:underline">
-                {site.phoneDisplay}
+                Dennis {site.phoneDisplay}
               </a>
               <a href="tel:+4520960287" className="hover:underline">
-                20 96 02 87
+                Kenneth 20 96 02 87
               </a>
             </div>
           </div>
