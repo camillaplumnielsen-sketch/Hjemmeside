@@ -113,34 +113,6 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
         </div>
       </section>
 
-      {/* Emner med eget billedgalleri */}
-      {service.topics && service.topics.length > 0 && (
-        <section className="container-max pb-section">
-          {service.topics.map((topic) => (
-            <Reveal
-              key={topic.title}
-              className="overflow-hidden rounded-4xl border border-forest-100 bg-white shadow-lift"
-            >
-              <div className="p-8 sm:p-10 lg:p-12">
-                <h3 className="font-display text-2xl font-semibold text-forest-900 text-balance">{topic.title}</h3>
-                <p className="mt-4 max-w-2xl text-pretty text-forest-600">{topic.description}</p>
-              </div>
-              <div className="grid grid-cols-2 gap-0.5 bg-forest-100 sm:grid-cols-4">
-                {topic.images.map((src, i) => (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    key={src}
-                    src={src}
-                    alt={`${topic.title} – billede ${i + 1}`}
-                    className="aspect-[4/3] w-full object-cover"
-                  />
-                ))}
-              </div>
-            </Reveal>
-          ))}
-        </section>
-      )}
-
       {/* Håndværkerfradrag */}
       <section className="container-max pb-4">
         <Reveal className="mx-auto flex max-w-3xl flex-col items-start gap-4 rounded-3xl border border-wood-200 bg-wood-50 p-6 sm:flex-row sm:items-center sm:p-7">
@@ -192,6 +164,34 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {relatedCases.map((c, i) => c && <CaseCard key={c.slug} project={c} index={i} />)}
           </div>
+        </section>
+      )}
+
+      {/* Emner med eget billedgalleri */}
+      {service.topics && service.topics.length > 0 && (
+        <section className="container-max pb-section">
+          {service.topics.map((topic) => (
+            <Reveal
+              key={topic.title}
+              className="overflow-hidden rounded-4xl border border-forest-100 bg-white shadow-lift"
+            >
+              <div className="p-8 sm:p-10 lg:p-12">
+                <h3 className="font-display text-2xl font-semibold text-forest-900 text-balance">{topic.title}</h3>
+                <p className="mt-4 max-w-2xl text-pretty text-forest-600">{topic.description}</p>
+              </div>
+              <div className="grid grid-cols-2 gap-0.5 bg-forest-100 sm:grid-cols-4">
+                {topic.images.map((src, i) => (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    key={src}
+                    src={src}
+                    alt={`${topic.title} – billede ${i + 1}`}
+                    className="aspect-[4/3] w-full object-cover"
+                  />
+                ))}
+              </div>
+            </Reveal>
+          ))}
         </section>
       )}
 
