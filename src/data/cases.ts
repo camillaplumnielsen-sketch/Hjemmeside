@@ -109,6 +109,7 @@ export const cases: ProjectCase[] = [
       '/images/case-knabberup-have.jpg',
       '/images/case-knabberup-kvist-indvendig.jpg',
       '/images/case-knabberup-kvist-vinduer-efter.jpg',
+      '/images/case-knabberup-kvist-facade-efter.jpg',
       '/images/case-knabberup-haandvaerk.jpg',
       '/images/case-knabberup-hall.jpg',
       '/images/case-knabberup-doer.jpg',
