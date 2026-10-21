@@ -25,6 +25,8 @@ export type Service = {
   /** Slugs på relaterede cases */
   relatedCases: string[];
   keywords: string[];
+  /** Ekstra emner med eget lille billedgalleri, uden at det skal være en selvstændig case */
+  topics?: { title: string; description: string; images: string[] }[];
 };
 
 export const services: Service[] = [
@@ -279,6 +281,19 @@ export const services: Service[] = [
     ],
     relatedCases: ['sommerhus-vesterhavet', 'traebro-vejle-aa', 'tilbygning-spisestue-vinrum-bredsten'],
     keywords: ['snedker Vejle', 'specialopgaver tømrer Vejle', 'indbygget inventar Vejle'],
+    topics: [
+      {
+        title: 'Nedhængt systemloft, Torvehallerne Vejle',
+        description:
+          'Vi har monteret nyt systemloft i erhvervslokaler i Torvehallerne i Vejle, med indbygget belysning og ventilation. Fra nedtagning af det gamle loft til et nyt, tæt og tidssvarende resultat.',
+        images: [
+          '/images/special-systemloft-torvehallerne-1.jpg',
+          '/images/special-systemloft-torvehallerne-2.jpg',
+          '/images/special-systemloft-torvehallerne-3.jpg',
+          '/images/special-systemloft-torvehallerne-4.jpg',
+        ],
+      },
+    ],
   },
 ];
 
