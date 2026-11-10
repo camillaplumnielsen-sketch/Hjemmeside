@@ -9,7 +9,7 @@ export type Testimonial = {
   initials: string;
 };
 
-// Ægte kundeanmeldelser fra Facebook (facebook.com/larsenbrdr/reviews).
+// Ægte kundeanmeldelser fra Facebook (facebook.com/larsenbrdr/reviews) og Google.
 // Facebook har ikke stjernebedømmelser, kun "anbefaler" – vist som 5/5 her.
 // Undgå at digte anmeldelser eller vurderinger, det er vildledende
 // markedsføring og kan udløse sanktioner fra fx Google.
@@ -35,5 +35,13 @@ export const testimonials: Testimonial[] = [
     quote: 'Overholder aftaler, yderst kundevenlige, fair priser og ikke mindst rigtig pænt arbejde 👍',
     source: 'Facebook',
     initials: 'ML',
+  },
+  {
+    name: 'Chris Antochi',
+    rating: 5,
+    quote:
+      'Tusind tak til Dennis og co., som har sat nye skydedøre/vinduer i vores terrasse samt lagt keramiske fliser. Det er blevet en flot resultat som vi er meget tilfreds med 🤩',
+    source: 'Google',
+    initials: 'CA',
   },
 ];
