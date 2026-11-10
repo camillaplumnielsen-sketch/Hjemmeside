@@ -29,5 +29,6 @@ export const upcomingProjects: UpcomingProject[] = [
     location: 'Ødsted',
     description:
       'Vi planlægger et nyt boligprojekt med 8 lejeboliger på Lille Mølkær i Ødsted. Projektet opstartes primo 2027. Spørgsmål om lejeboligerne kan rettes til vores ejendomsadministrator Camilla.',
+    image: '/images/project-lille-moelkaer-2-kommende.jpg',
   },
 ];
