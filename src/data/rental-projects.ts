@@ -45,7 +45,7 @@ export const rentalProjects: RentalProject[] = [
   },
   {
     slug: 'lindeparken-ny-noerup-projekt',
-    name: 'Lindeparken',
+    name: 'Lindeparken I',
     location: 'Ny Nørup',
     units: '14 lejemål',
     buildYears: '2021–2023',
