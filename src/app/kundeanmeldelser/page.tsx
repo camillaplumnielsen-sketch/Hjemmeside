@@ -43,7 +43,7 @@ export default function ReviewsPage() {
             <SectionHeading
               eyebrow="Kundeanmeldelser"
               title="Tilliden er hårdt tjent"
-              description="Vi er stolte af vores anmeldelser fra Facebook – de er skabt af rigtige kunder og rigtige projekter i Vejle-området."
+              description="Vi er stolte af vores anmeldelser fra Google og Facebook – de er skabt af rigtige kunder og rigtige projekter i Vejle-området."
             />
           </div>
         </div>
