@@ -55,6 +55,13 @@ export const testimonials: Testimonial[] = [
     initials: 'KJ',
   },
   {
+    name: 'Linda Brandt',
+    rating: 5,
+    quote: 'Go service og gode priser og overholder altid deres aftaler kan helt klart anbefales',
+    source: 'Google',
+    initials: 'LB',
+  },
+  {
     name: 'Maj-Britt Plum Nielsen',
     rating: 5,
     quote: 'Super flot arbejde udført af de dygtigste håndværkere til den bedste pris 💪',
