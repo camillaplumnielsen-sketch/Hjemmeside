@@ -13,7 +13,7 @@ export type RentalProject = {
 export const rentalProjects: RentalProject[] = [
   {
     slug: 'lille-moelkaer',
-    name: 'Lille Mølkær',
+    name: 'Lille Mølkær I',
     location: 'Ødsted, 7100 Vejle',
     units: '14 lejemål',
     buildYears: '2017–2018',

@@ -25,7 +25,7 @@ export const upcomingProjects: UpcomingProject[] = [
   },
   {
     slug: 'lille-moelkaer-8-boliger',
-    name: 'Lille Mølkær',
+    name: 'Lille Mølkær II',
     location: 'Ødsted',
     description:
       'Vi planlægger et nyt boligprojekt med 8 lejeboliger på Lille Mølkær i Ødsted. Projektet opstartes primo 2027. Spørgsmål om lejeboligerne kan rettes til vores ejendomsadministrator Camilla.',
