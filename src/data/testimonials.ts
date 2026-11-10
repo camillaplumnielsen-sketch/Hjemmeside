@@ -15,6 +15,14 @@ export type Testimonial = {
 // markedsføring og kan udløse sanktioner fra fx Google.
 export const testimonials: Testimonial[] = [
   {
+    name: 'Åglimt Vejle',
+    rating: 5,
+    quote:
+      'Vi skulle have lavet en tilbygning samt en ny carport. Vi havde skitseret vores tanker og kom i mål med vores projekt i et super godt samarbejde med Brdr. Larsen tømrerfirma. Vi havde en rigtig god sparring under hele processen hvor vi løbende havde en dialog omkring hvordan udtrykket i vores byggeri skulle være. Vi kom i mål inden for aftalt tid og til den aftalte pris og uden nogen slinger i valsen. De varmeste anbefalinger herfra.',
+    source: 'Google',
+    initials: 'ÅV',
+  },
+  {
     name: 'Chris Antochi',
     rating: 5,
     quote:
@@ -37,14 +45,6 @@ export const testimonials: Testimonial[] = [
       'Vi har brugt Brdr. Larsen af flere omgange og kan kun give dem vores varmeste anbefaling. Første gang stod de for opførelsen af en ny overetage på vores daværende hus, hvor de havde ansvaret for hele projektet inkl. koordinering af underentreprenører. Alt spillede fra start til slut – aftaler blev overholdt, tidsplanen holdt, og vi følte os i trygge hænder hele vejen. Da vi senere skulle bygge vores nuværende arkitekttegnede hus på over 200 m², var det derfor helt naturligt, at Brdr. Larsen var de første, vi tog fat i. Heldigvis havde de mod på opgaven, og de har stået for hele byggeriet og fået alle fag og underentreprenører til at spille sammen. Endnu en gang er alt forløbet som aftalt – tidsplaner er blevet overholdt, der har været styr på økonomien, og der er ikke kommet ubehagelige overraskelser undervejs. Det betyder rigtig meget, når man kaster sig ud i et stort byggeprojekt, at man kan stole på dem, man arbejder sammen med. Det har vi kunnet med Brdr. Larsen hele vejen igennem. Godt håndværk, ordentlighed og styr på tingene – vi giver dem vores bedste anbefaling og ville uden tøven vælge dem igen.',
     source: 'Google',
     initials: 'TK',
-  },
-  {
-    name: 'Åglimt Vejle',
-    rating: 5,
-    quote:
-      'Vi skulle have lavet en tilbygning samt en ny carport. Vi havde skitseret vores tanker og kom i mål med vores projekt i et super godt samarbejde med Brdr. Larsen tømrerfirma. Vi havde en rigtig god sparring under hele processen hvor vi løbende havde en dialog omkring hvordan udtrykket i vores byggeri skulle være. Vi kom i mål inden for aftalt tid og til den aftalte pris og uden nogen slinger i valsen. De varmeste anbefalinger herfra.',
-    source: 'Google',
-    initials: 'ÅV',
   },
   {
     name: 'Kasper Jessen',
