@@ -47,6 +47,14 @@ export const testimonials: Testimonial[] = [
     initials: 'ÅV',
   },
   {
+    name: 'Kasper Jessen',
+    rating: 5,
+    quote:
+      'Super god oplevelse fra start til slut. Alle aftaler blev overholdt og kommunikationen igennem hele byggeforløbet var i top. De varmeste anbefalinger her fra.',
+    source: 'Google',
+    initials: 'KJ',
+  },
+  {
     name: 'Maj-Britt Plum Nielsen',
     rating: 5,
     quote: 'Super flot arbejde udført af de dygtigste håndværkere til den bedste pris 💪',
