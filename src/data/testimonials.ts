@@ -39,6 +39,14 @@ export const testimonials: Testimonial[] = [
     initials: 'TK',
   },
   {
+    name: 'Åglimt Vejle',
+    rating: 5,
+    quote:
+      'Vi skulle have lavet en tilbygning samt en ny carport. Vi havde skitseret vores tanker og kom i mål med vores projekt i et super godt samarbejde med Brdr. Larsen tømrerfirma. Vi havde en rigtig god sparring under hele processen hvor vi løbende havde en dialog omkring hvordan udtrykket i vores byggeri skulle være. Vi kom i mål inden for aftalt tid og til den aftalte pris og uden nogen slinger i valsen. De varmeste anbefalinger herfra.',
+    source: 'Google',
+    initials: 'ÅV',
+  },
+  {
     name: 'Maj-Britt Plum Nielsen',
     rating: 5,
     quote: 'Super flot arbejde udført af de dygtigste håndværkere til den bedste pris 💪',
