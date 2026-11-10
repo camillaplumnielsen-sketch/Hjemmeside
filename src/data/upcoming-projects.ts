@@ -23,4 +23,11 @@ export const upcomingProjects: UpcomingProject[] = [
       'Vi planlægger et nyt boligprojekt med 8 lejeboliger i Ny Nørup. Projektet er under udvikling, og yderligere oplysninger følger løbende.',
     image: '/images/project-ny-noerup-kommende.jpg',
   },
+  {
+    slug: 'lille-moelkaer-8-boliger',
+    name: 'Lille Mølkær',
+    location: 'Ødsted',
+    description:
+      'Vi planlægger et nyt boligprojekt med 8 lejeboliger på Lille Mølkær i Ødsted. Projektet opstartes primo 2027. Spørgsmål om lejeboligerne kan rettes til vores ejendomsadministrator Camilla.',
+  },
 ];
