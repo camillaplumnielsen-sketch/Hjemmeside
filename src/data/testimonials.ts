@@ -44,4 +44,12 @@ export const testimonials: Testimonial[] = [
     source: 'Google',
     initials: 'CA',
   },
+  {
+    name: 'Anders Hellum',
+    rating: 5,
+    quote:
+      'Rigtig god oplevelse fra start til slut. Vi har haft Brdr. Larsen til at montere nye vinduer og er meget tilfredse med resultatet. Flot og professionelt udført arbejde, god kommunikation og behagelige folk at have gående. Alt levede op til vores forventninger, og vi kan varmt anbefale dem.',
+    source: 'Google',
+    initials: 'AH',
+  },
 ];
