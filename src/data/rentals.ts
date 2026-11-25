@@ -37,7 +37,8 @@ export const rentals: RentalListing[] = [
     area: '88–101 m²',
     availableFrom: 'Efterår 2027',
     description:
-      'Vi opfører 8 nye lejeboliger i et roligt og grønt boligområde i Ødsted. Boligerne er under opførelse og forventes klar til indflytning efterår 2027. Kontakt os for at høre nærmere om de enkelte boliger.',
+      'Vi opfører 8 nye lejeboliger i et roligt og grønt boligområde i Ødsted. Boligerne er under opførelse og forventes klar til indflytning efterår 2027. Er du interesseret, kan du allerede nu blive skrevet på vores interesseliste – kontakt os for at høre nærmere om de enkelte boliger.',
+    images: ['/images/rental-lille-moelkaer-2-1.jpg'],
   },
 ];
 
