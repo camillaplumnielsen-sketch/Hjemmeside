@@ -199,20 +199,26 @@ export default function BoligudlejningPage() {
                   </div>
                   <div className="flex justify-between">
                     <dt className="text-forest-500">Boligareal</dt>
-                    <dd className="font-medium text-forest-800">{rental.areaM2} m²</dd>
+                    <dd className="font-medium text-forest-800">{rental.area}</dd>
                   </div>
-                  <div className="flex justify-between">
-                    <dt className="text-forest-500">Antal værelser</dt>
-                    <dd className="font-medium text-forest-800">{rental.rooms}</dd>
-                  </div>
-                  <div className="flex justify-between">
-                    <dt className="text-forest-500">Månedlig husleje</dt>
-                    <dd className="font-medium text-forest-800">{formatDKK(rental.rentMonthly)}</dd>
-                  </div>
-                  <div className="flex justify-between">
-                    <dt className="text-forest-500">Depositum</dt>
-                    <dd className="font-medium text-forest-800">{formatDKK(rental.deposit)}</dd>
-                  </div>
+                  {rental.rooms !== undefined && (
+                    <div className="flex justify-between">
+                      <dt className="text-forest-500">Antal værelser</dt>
+                      <dd className="font-medium text-forest-800">{rental.rooms}</dd>
+                    </div>
+                  )}
+                  {rental.rentMonthly !== undefined && (
+                    <div className="flex justify-between">
+                      <dt className="text-forest-500">Månedlig husleje</dt>
+                      <dd className="font-medium text-forest-800">{formatDKK(rental.rentMonthly)}</dd>
+                    </div>
+                  )}
+                  {rental.deposit !== undefined && (
+                    <div className="flex justify-between">
+                      <dt className="text-forest-500">Depositum</dt>
+                      <dd className="font-medium text-forest-800">{formatDKK(rental.deposit)}</dd>
+                    </div>
+                  )}
                   <div className="flex justify-between">
                     <dt className="text-forest-500">Ledig fra</dt>
                     <dd className="font-medium text-forest-800">{rental.availableFrom}</dd>
