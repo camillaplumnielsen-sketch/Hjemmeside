@@ -193,9 +193,9 @@ export default function BoligudlejningPage() {
                 </h3>
 
                 <dl className="mt-5 space-y-3 border-t border-forest-100 pt-5 text-sm">
-                  <div className="flex justify-between">
+                  <div>
                     <dt className="text-forest-500">Adresse</dt>
-                    <dd className="font-medium text-forest-800">{rental.address}</dd>
+                    <dd className="mt-1 font-medium text-forest-800">{rental.address}</dd>
                   </div>
                   <div className="flex justify-between">
                     <dt className="text-forest-500">Boligareal</dt>
