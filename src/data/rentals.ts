@@ -24,9 +24,9 @@ export const rentals: RentalListing[] = [
     rooms: 3,
     rentMonthly: 10100,
     deposit: 30300,
-    availableFrom: 'Primo 2027',
+    availableFrom: 'Medio 2027',
     description:
-      'Boligen er under opførelse og forventes klar til indflytning primo 2027. Kontakt os for at høre nærmere om overtagelsesdato og de øvrige detaljer.',
+      'Boligen er under opførelse og forventes klar til indflytning medio 2027. Kontakt os for at høre nærmere om overtagelsesdato og de øvrige detaljer.',
     images: ['/images/rental-lindeparken-1.jpg', '/images/rental-lindeparken-2.jpg'],
   },
   {
