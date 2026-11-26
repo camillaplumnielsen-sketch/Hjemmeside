@@ -22,7 +22,7 @@ export const rentals: RentalListing[] = [
     address: 'Lindeparken',
     area: '112 m²',
     rooms: 3,
-    rentMonthly: 10100,
+    rentMonthly: 10200,
     deposit: 30300,
     availableFrom: 'Medio 2027',
     description:
