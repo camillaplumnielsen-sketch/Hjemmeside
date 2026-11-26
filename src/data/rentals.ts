@@ -23,7 +23,7 @@ export const rentals: RentalListing[] = [
     area: '112 m²',
     rooms: 3,
     rentMonthly: 10200,
-    deposit: 30300,
+    deposit: 30600,
     availableFrom: 'Medio 2027',
     description:
       'Boligen er under opførelse og forventes klar til indflytning medio 2027. Kontakt os for at høre nærmere om overtagelsesdato og de øvrige detaljer.',
