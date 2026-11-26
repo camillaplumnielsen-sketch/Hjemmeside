@@ -33,7 +33,7 @@ export const rentals: RentalListing[] = [
     slug: 'lille-moelkaer-2-oedsted-aktuel',
     name: 'Lille Mølkær II',
     location: 'Ødsted',
-    address: 'Lille Mølkær 14 til 20, Ødsted',
+    address: 'Lille Mølkær 14A/B til 20A/B, Ødsted',
     area: '88–101 m²',
     availableFrom: 'Efterår 2027',
     description:

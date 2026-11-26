@@ -175,7 +175,7 @@ export default function BoligudlejningPage() {
               {rental.images && rental.images.length > 0 && (
                 <div className={`grid gap-0.5 bg-forest-100 ${rental.images.length === 1 ? 'grid-cols-1' : 'grid-cols-2'}`}>
                   {rental.images.map((image, imgIndex) => (
-                    <div key={image} className="aspect-[4/3] w-full">
+                    <div key={image} className={`w-full ${rental.images!.length === 1 ? 'aspect-[8/3]' : 'aspect-[4/3]'}`}>
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src={image}
